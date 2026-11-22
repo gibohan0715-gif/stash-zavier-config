@@ -267,6 +267,94 @@ proxy-groups:
   - 香港节点
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
+- name: Whatsapp
+  type: select
+  proxies: &id001
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+- name: Reddit
+  type: select
+  proxies: *id001
+- name: Discord
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Discord.png
+- name: LinkedIn
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Linkedin.png
+- name: Pinterest
+  type: select
+  proxies: *id001
+- name: Threads
+  type: select
+  proxies: *id001
+- name: Line
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Line.png
+- name: KakaoTalk
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Kakao.png
+- name: Tumblr
+  type: select
+  proxies: *id001
+- name: VK
+  type: select
+  proxies: *id001
+- name: TruthSocial
+  type: select
+  proxies: *id001
+- name: Snapchat
+  type: select
+  proxies: *id001
+- name: Signal
+  type: select
+  proxies: *id001
+- name: Viber
+  type: select
+  proxies: *id001
+- name: Bluesky
+  type: select
+  proxies: *id001
+- name: Weibo
+  type: select
+  proxies: &id002
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Weibo.png
+- name: XiaoHongShu
+  type: select
+  proxies: *id002
+- name: DouBan
+  type: select
+  proxies: *id002
+- name: QQ
+  type: select
+  proxies: *id002
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/QQ.png
+- name: Kuaishou
+  type: select
+  proxies: *id002
+- name: ZhiHu
+  type: select
+  proxies: *id002
+- name: Momo
+  type: select
+  proxies: *id002
+- name: Tantan
+  type: select
+  proxies: *id002
+- name: Soul
+  type: select
+  proxies: *id002
 - name: ApplePush
   type: select
   proxies:
@@ -601,6 +689,90 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
     path: ./ruleset/GlobalMedia_Classical.yaml
     interval: 86400
+  Whatsapp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
+    path: ./ruleset/Whatsapp.yaml
+    interval: 86400
+  Reddit:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml
+    path: ./ruleset/Reddit.yaml
+    interval: 86400
+  Discord:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+    path: ./ruleset/Discord.yaml
+    interval: 86400
+  LinkedIn:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LinkedIn/LinkedIn.yaml
+    path: ./ruleset/LinkedIn.yaml
+    interval: 86400
+  Pinterest:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinterest/Pinterest.yaml
+    path: ./ruleset/Pinterest.yaml
+    interval: 86400
+  Threads:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Threads/Threads.yaml
+    path: ./ruleset/Threads.yaml
+    interval: 86400
+  Line:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Line/Line.yaml
+    path: ./ruleset/Line.yaml
+    interval: 86400
+  KakaoTalk:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KakaoTalk/KakaoTalk.yaml
+    path: ./ruleset/KakaoTalk.yaml
+    interval: 86400
+  Tumblr:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tumblr/Tumblr.yaml
+    path: ./ruleset/Tumblr.yaml
+    interval: 86400
+  VK:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/VK/VK.yaml
+    path: ./ruleset/VK.yaml
+    interval: 86400
+  TruthSocial:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TruthSocial/TruthSocial.yaml
+    path: ./ruleset/TruthSocial.yaml
+    interval: 86400
+  Weibo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Weibo/Weibo.yaml
+    path: ./ruleset/Weibo.yaml
+    interval: 86400
+  XiaoHongShu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoHongShu/XiaoHongShu.yaml
+    path: ./ruleset/XiaoHongShu.yaml
+    interval: 86400
+  DouBan:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouBan/DouBan.yaml
+    path: ./ruleset/DouBan.yaml
+    interval: 86400
 rules:
 - RULE-SET,Reject,REJECT
 - DOMAIN-SUFFIX,emby.alexzavier.ccwu.cc,DIRECT
@@ -693,6 +865,41 @@ rules:
 - RULE-SET,Facebook,Facebook
 - RULE-SET,Instagram,Instagram
 - RULE-SET,TikTok,TikTok
+- RULE-SET,Whatsapp,Whatsapp
+- RULE-SET,Reddit,Reddit
+- RULE-SET,Discord,Discord
+- RULE-SET,LinkedIn,LinkedIn
+- RULE-SET,Pinterest,Pinterest
+- RULE-SET,Threads,Threads
+- RULE-SET,Line,Line
+- RULE-SET,KakaoTalk,KakaoTalk
+- RULE-SET,Tumblr,Tumblr
+- RULE-SET,VK,VK
+- RULE-SET,TruthSocial,TruthSocial
+- RULE-SET,Weibo,Weibo
+- RULE-SET,XiaoHongShu,XiaoHongShu
+- RULE-SET,DouBan,DouBan
+- DOMAIN-SUFFIX,snapchat.com,Snapchat
+- DOMAIN-SUFFIX,snap.com,Snapchat
+- DOMAIN-SUFFIX,signal.org,Signal
+- DOMAIN-SUFFIX,signal.me,Signal
+- DOMAIN-SUFFIX,viber.com,Viber
+- DOMAIN-SUFFIX,bsky.app,Bluesky
+- DOMAIN-SUFFIX,bsky.social,Bluesky
+- DOMAIN-SUFFIX,blueskyweb.xyz,Bluesky
+- DOMAIN-SUFFIX,qzone.qq.com,QQ
+- DOMAIN-SUFFIX,qlogo.cn,QQ
+- DOMAIN-SUFFIX,qqmail.com,QQ
+- DOMAIN-SUFFIX,kuaishou.com,Kuaishou
+- DOMAIN-SUFFIX,kwai.com,Kuaishou
+- DOMAIN-SUFFIX,kuaishouapp.com,Kuaishou
+- DOMAIN-SUFFIX,zhihu.com,ZhiHu
+- DOMAIN-SUFFIX,zhihuapp.com,ZhiHu
+- DOMAIN-SUFFIX,immomo.com,Momo
+- DOMAIN-SUFFIX,momocdn.com,Momo
+- DOMAIN-SUFFIX,tantan.com,Tantan
+- DOMAIN-SUFFIX,soulapp.cn,Soul
+- DOMAIN-SUFFIX,soul.cn,Soul
 - RULE-SET,Steam,游戏
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Netflix,Netflix
