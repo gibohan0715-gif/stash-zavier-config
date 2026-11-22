@@ -713,7 +713,7 @@ rule-providers:
   ApplePush:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/ApplePush.yaml
+    url: https://rule2-ze9.pages.dev/data/_shared/artifacts/Apple_APNs_classical_2e90bebf36120c7f.yaml
     path: ./ruleset/ApplePush.yaml
     interval: 86400
   DomesticSocial:
