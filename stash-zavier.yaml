@@ -172,6 +172,27 @@ proxy-groups:
   - 香港节点
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
+- name: Twitter
+  type: select
+  proxies: &id001
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Twitter.png
+- name: Telegram
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+- name: Instagram
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png
+- name: Facebook
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Facebook.png
 - name: 国外社交
   type: select
   proxies:
@@ -718,7 +739,6 @@ rules:
 - RULE-SET,Claude,AI
 - RULE-SET,Gemini,AI
 - RULE-SET,Copilot,AI
-- RULE-SET,Telegram,国外社交
 - RULE-SET,Google,Google
 - DOMAIN-SUFFIX,push.apple.com,ApplePush
 - DOMAIN,api.push.apple.com,ApplePush
@@ -726,9 +746,10 @@ rules:
 - DOMAIN,courier.push.apple.com,ApplePush
 - RULE-SET,Apple,Apple服务
 - RULE-SET,Microsoft,微软服务
-- RULE-SET,Twitter,国外社交
-- RULE-SET,Facebook,国外社交
-- RULE-SET,Instagram,国外社交
+- RULE-SET,Telegram,Telegram
+- RULE-SET,Twitter,Twitter
+- RULE-SET,Facebook,Facebook
+- RULE-SET,Instagram,Instagram
 - RULE-SET,TikTok,国外社交
 - RULE-SET,Whatsapp,国外社交
 - RULE-SET,Reddit,国外社交
