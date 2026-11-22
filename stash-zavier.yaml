@@ -333,7 +333,7 @@ rule-providers:
   AI:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+    url: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/AI.yaml
     path: ./ruleset/AI.yaml
     interval: 86400
   Telegram:
@@ -402,12 +402,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.yaml
     path: ./ruleset/Instagram.yaml
     interval: 86400
-  TikTok:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
-    path: ./ruleset/TikTok.yaml
-    interval: 86400
   Steam:
     type: http
     behavior: classical
@@ -432,30 +426,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml
     path: ./ruleset/ChinaIp.yaml
     interval: 86400
-  Claude:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
-    path: ./ruleset/Claude.yaml
-    interval: 86400
-  Gemini:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml
-    path: ./ruleset/Gemini.yaml
-    interval: 86400
-  Copilot:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
-    path: ./ruleset/Copilot.yaml
-    interval: 86400
-  DouYin:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.yaml
-    path: ./ruleset/DouYin.yaml
-    interval: 86400
   NetEase:
     type: http
     behavior: classical
@@ -467,12 +437,6 @@ rule-providers:
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml
     path: ./ruleset/NetEaseMusic.yaml
-    interval: 86400
-  WeChat:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
-    path: ./ruleset/WeChat.yaml
     interval: 86400
   BiliBili:
     type: http
@@ -576,216 +540,38 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
     path: ./ruleset/GlobalMedia_Classical.yaml
     interval: 86400
-  Whatsapp:
+  ApplePush:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
-    path: ./ruleset/Whatsapp.yaml
+    url: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/ApplePush.yaml
+    path: ./ruleset/ApplePush.yaml
     interval: 86400
-  Reddit:
+  ForeignSocial:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml
-    path: ./ruleset/Reddit.yaml
+    url: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/ForeignSocial.yaml
+    path: ./ruleset/ForeignSocial.yaml
     interval: 86400
-  Discord:
+  DomesticSocial:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
-    path: ./ruleset/Discord.yaml
-    interval: 86400
-  LinkedIn:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LinkedIn/LinkedIn.yaml
-    path: ./ruleset/LinkedIn.yaml
-    interval: 86400
-  Pinterest:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinterest/Pinterest.yaml
-    path: ./ruleset/Pinterest.yaml
-    interval: 86400
-  Threads:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Threads/Threads.yaml
-    path: ./ruleset/Threads.yaml
-    interval: 86400
-  Line:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Line/Line.yaml
-    path: ./ruleset/Line.yaml
-    interval: 86400
-  KakaoTalk:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KakaoTalk/KakaoTalk.yaml
-    path: ./ruleset/KakaoTalk.yaml
-    interval: 86400
-  Tumblr:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tumblr/Tumblr.yaml
-    path: ./ruleset/Tumblr.yaml
-    interval: 86400
-  VK:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/VK/VK.yaml
-    path: ./ruleset/VK.yaml
-    interval: 86400
-  TruthSocial:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TruthSocial/TruthSocial.yaml
-    path: ./ruleset/TruthSocial.yaml
-    interval: 86400
-  Weibo:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Weibo/Weibo.yaml
-    path: ./ruleset/Weibo.yaml
-    interval: 86400
-  XiaoHongShu:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoHongShu/XiaoHongShu.yaml
-    path: ./ruleset/XiaoHongShu.yaml
-    interval: 86400
-  DouBan:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouBan/DouBan.yaml
-    path: ./ruleset/DouBan.yaml
+    url: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/DomesticSocial.yaml
+    path: ./ruleset/DomesticSocial.yaml
     interval: 86400
 rules:
 - RULE-SET,Reject,REJECT
 - DOMAIN-SUFFIX,emby.alexzavier.ccwu.cc,DIRECT
-- DOMAIN-SUFFIX,grok.com,AI
-- DOMAIN-SUFFIX,x.ai,AI
-- DOMAIN-SUFFIX,perplexity.ai,AI
-- DOMAIN-SUFFIX,pplx.ai,AI
-- DOMAIN-SUFFIX,perplexity.com,AI
-- DOMAIN-SUFFIX,midjourney.com,AI
-- DOMAIN-SUFFIX,meta.ai,AI
-- DOMAIN-SUFFIX,mistral.ai,AI
-- DOMAIN-SUFFIX,poe.com,AI
-- DOMAIN-SUFFIX,huggingface.co,AI
-- DOMAIN-SUFFIX,cursor.com,AI
-- DOMAIN-SUFFIX,cursor.sh,AI
-- DOMAIN-SUFFIX,openrouter.ai,AI
-- DOMAIN-SUFFIX,groq.com,AI
-- DOMAIN-SUFFIX,sora.com,AI
-- DOMAIN-SUFFIX,character.ai,AI
-- DOMAIN-SUFFIX,cohere.com,AI
-- DOMAIN-SUFFIX,cohere.ai,AI
-- DOMAIN-SUFFIX,runwayml.com,AI
-- DOMAIN-SUFFIX,stability.ai,AI
-- DOMAIN-SUFFIX,leonardo.ai,AI
-- DOMAIN-SUFFIX,jasper.ai,AI
-- DOMAIN-SUFFIX,copy.ai,AI
-- DOMAIN-SUFFIX,deepl.com,AI
-- DOMAIN-SUFFIX,elevenlabs.io,AI
-- DOMAIN-SUFFIX,suno.com,AI
-- DOMAIN-SUFFIX,replicate.com,AI
-- DOMAIN-SUFFIX,fal.ai,AI
-- DOMAIN-SUFFIX,together.ai,AI
-- DOMAIN-SUFFIX,fireworks.ai,AI
-- DOMAIN-SUFFIX,openai.com,AI
-- DOMAIN-SUFFIX,chatgpt.com,AI
-- DOMAIN-SUFFIX,anthropic.com,AI
-- DOMAIN-SUFFIX,claude.ai,AI
-- DOMAIN-SUFFIX,claude.com,AI
-- DOMAIN-SUFFIX,gemini.google.com,AI
-- DOMAIN-SUFFIX,aistudio.google.com,AI
-- DOMAIN-SUFFIX,notebooklm.google,AI
-- DOMAIN-SUFFIX,copilot.microsoft.com,AI
-- DOMAIN-SUFFIX,llama.com,AI
-- DOMAIN-SUFFIX,chat.com,AI
-- DOMAIN-SUFFIX,notion.so,AI
-- DOMAIN-SUFFIX,notion.ai,AI
-- DOMAIN-SUFFIX,grammarly.com,AI
-- DOMAIN-SUFFIX,quillbot.com,AI
-- DOMAIN-SUFFIX,ideogram.ai,AI
-- DOMAIN-SUFFIX,flux.ai,AI
-- DOMAIN-SUFFIX,blackforestlabs.ai,AI
-- DOMAIN-SUFFIX,lumalabs.ai,AI
-- DOMAIN-SUFFIX,pika.art,AI
-- DOMAIN-SUFFIX,heygen.com,AI
-- DOMAIN-SUFFIX,gamma.app,AI
-- DOMAIN-SUFFIX,claudeusercontent.com,AI
-- DOMAIN-SUFFIX,oaiusercontent.com,AI
-- DOMAIN-SUFFIX,oaistatic.com,AI
-- DOMAIN-SUFFIX,api.openai.com,AI
-- DOMAIN-SUFFIX,api.anthropic.com,AI
-- DOMAIN-SUFFIX,api.mistral.ai,AI
-- DOMAIN-SUFFIX,console.mistral.ai,AI
-- DOMAIN-SUFFIX,hf.co,AI
-- DOMAIN-SUFFIX,windsurf.com,AI
-- DOMAIN-SUFFIX,zed.dev,AI
-- DOMAIN-SUFFIX,tabnine.com,AI
-- DOMAIN-SUFFIX,sourcegraph.com,AI
-- DOMAIN-SUFFIX,cody.com,AI
-- DOMAIN-SUFFIX,cline.bot,AI
-- DOMAIN-SUFFIX,roo.ai,AI
-- DOMAIN-SUFFIX,continue.dev,AI
-- DOMAIN-SUFFIX,pieces.app,AI
-- DOMAIN-SUFFIX,supermaven.com,AI
-- DOMAIN-SUFFIX,codegpt.co,AI
-- DOMAIN-SUFFIX,codeium.com,AI
 - RULE-SET,AI,AI
-- RULE-SET,Claude,AI
-- RULE-SET,Gemini,AI
-- RULE-SET,Copilot,AI
 - RULE-SET,Google,Google
-- DOMAIN-SUFFIX,push.apple.com,ApplePush
-- DOMAIN,api.push.apple.com,ApplePush
-- DOMAIN,gateway.push.apple.com,ApplePush
-- DOMAIN,courier.push.apple.com,ApplePush
+- RULE-SET,ApplePush,ApplePush
 - RULE-SET,Apple,Apple服务
 - RULE-SET,Microsoft,微软服务
 - RULE-SET,Telegram,Telegram
 - RULE-SET,Twitter,Twitter
 - RULE-SET,Facebook,Facebook
 - RULE-SET,Instagram,Instagram
-- RULE-SET,TikTok,国外社交
-- RULE-SET,Whatsapp,国外社交
-- RULE-SET,Reddit,国外社交
-- RULE-SET,Discord,国外社交
-- RULE-SET,LinkedIn,国外社交
-- RULE-SET,Pinterest,国外社交
-- RULE-SET,Threads,国外社交
-- RULE-SET,Line,国外社交
-- RULE-SET,KakaoTalk,国外社交
-- RULE-SET,Tumblr,国外社交
-- RULE-SET,VK,国外社交
-- RULE-SET,TruthSocial,国外社交
-- RULE-SET,Weibo,国内社交
-- RULE-SET,XiaoHongShu,国内社交
-- RULE-SET,DouBan,国内社交
-- DOMAIN-SUFFIX,snapchat.com,国外社交
-- DOMAIN-SUFFIX,snap.com,国外社交
-- DOMAIN-SUFFIX,signal.org,国外社交
-- DOMAIN-SUFFIX,signal.me,国外社交
-- DOMAIN-SUFFIX,viber.com,国外社交
-- DOMAIN-SUFFIX,bsky.app,国外社交
-- DOMAIN-SUFFIX,bsky.social,国外社交
-- DOMAIN-SUFFIX,blueskyweb.xyz,国外社交
-- DOMAIN-SUFFIX,qzone.qq.com,国内社交
-- DOMAIN-SUFFIX,qlogo.cn,国内社交
-- DOMAIN-SUFFIX,qqmail.com,国内社交
-- DOMAIN-SUFFIX,kuaishou.com,国内社交
-- DOMAIN-SUFFIX,kwai.com,国内社交
-- DOMAIN-SUFFIX,kuaishouapp.com,国内社交
-- DOMAIN-SUFFIX,zhihu.com,国内社交
-- DOMAIN-SUFFIX,zhihuapp.com,国内社交
-- DOMAIN-SUFFIX,immomo.com,国内社交
-- DOMAIN-SUFFIX,momocdn.com,国内社交
-- DOMAIN-SUFFIX,tantan.com,国内社交
-- DOMAIN-SUFFIX,soulapp.cn,国内社交
-- DOMAIN-SUFFIX,soul.cn,国内社交
+- RULE-SET,ForeignSocial,国外社交
+- RULE-SET,DomesticSocial,国内社交
 - RULE-SET,Steam,游戏
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Netflix,Netflix
@@ -798,10 +584,8 @@ rules:
 - RULE-SET,Peacock,国外媒体
 - RULE-SET,AppleTV,国外媒体
 - RULE-SET,GlobalMedia,国外媒体
-- RULE-SET,DouYin,国内社交
 - RULE-SET,NetEase,NetEase
 - RULE-SET,NetEaseMusic,NetEase
-- RULE-SET,WeChat,国内社交
 - RULE-SET,BiliBili,国内媒体
 - RULE-SET,iQIYI,国内媒体
 - RULE-SET,TencentVideo,国内媒体
