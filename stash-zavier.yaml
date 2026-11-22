@@ -34,6 +34,21 @@ dns:
     '+.*':
     - https://dns.google/dns-query
     - https://1.1.1.1/dns-query
+    weixin.qq.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    wx.qq.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    qq.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    tencent.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    wechat.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 proxy-providers:
   Subscribe:
     type: http
