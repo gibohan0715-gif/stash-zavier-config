@@ -183,7 +183,7 @@ rule-providers:
   Reject:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/AdBlock.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
     path: ./ruleset/Reject.yaml
     interval: 86400
   AI:
