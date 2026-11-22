@@ -323,6 +323,48 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
     path: ./ruleset/Steam.yaml
     interval: 86400
+  Baidu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Baidu/Baidu.yaml
+    path: ./ruleset/Baidu.yaml
+    interval: 86400
+  Alibaba:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Alibaba/Alibaba.yaml
+    path: ./ruleset/Alibaba.yaml
+    interval: 86400
+  Tencent:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.yaml
+    path: ./ruleset/Tencent.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    path: ./ruleset/ChinaMedia.yaml
+    interval: 86400
+  Weibo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Weibo/Weibo.yaml
+    path: ./ruleset/Weibo.yaml
+    interval: 86400
+  Zhihu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Zhihu/Zhihu.yaml
+    path: ./ruleset/Zhihu.yaml
+    interval: 86400
+  ChinaIp:
+    type: http
+    behavior: ipcidr
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml
+    path: ./ruleset/ChinaIp.yaml
+    interval: 86400
 
 rules:
   - DOMAIN-SUFFIX,emby.alexzavier.ccwu.cc,DIRECT
@@ -335,6 +377,12 @@ rules:
   - RULE-SET,WeChat,微信
   - RULE-SET,BiliBili,哔哩哔哩
   - RULE-SET,NetEaseMusic,网易音乐
+  - RULE-SET,Baidu,DIRECT
+  - RULE-SET,Alibaba,DIRECT
+  - RULE-SET,Tencent,DIRECT
+  - RULE-SET,ChinaMedia,DIRECT
+  - RULE-SET,Weibo,DIRECT
+  - RULE-SET,Zhihu,DIRECT
   - RULE-SET,Twitter,社交
   - RULE-SET,Facebook,社交
   - RULE-SET,Instagram,社交
@@ -345,5 +393,6 @@ rules:
   - RULE-SET,Disney,流媒体
   - RULE-SET,Spotify,音乐
   - RULE-SET,Direct,DIRECT
+  - RULE-SET,ChinaIp,DIRECT,no-resolve
   - GEOIP,CN,DIRECT
   - MATCH,节点选择
