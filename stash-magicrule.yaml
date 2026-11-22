@@ -775,6 +775,6 @@ rules:
 - RULE-SET,ChinaMedia,国内媒体
 - RULE-SET,China,DIRECT
 - RULE-SET,ChinaIPs,DIRECT,no-resolve
-- RULE-SET,Global,节点选择
+- RULE-SET,Global,漏网之鱼
 - GEOIP,CN,DIRECT
 - MATCH,漏网之鱼
