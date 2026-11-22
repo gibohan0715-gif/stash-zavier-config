@@ -71,7 +71,7 @@ real_ip_domains:
 - '*-appboot.netflix.com'
 policy_groups:
 - external:
-    name: 国外
+    name: 订阅
     type: select
     urls:
     - http://your-service-provider
@@ -80,12 +80,71 @@ policy_groups:
     - http://your-service-provider
     - http://your-service-provider
     hidden: false
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Static.png
+- select:
+    name: 国外
+    policies:
+    - 订阅
+    - 美国节点
+    - 香港节点
+    - 日本节点
+    - 韩国节点
+    - 新加坡节点
+    - 台湾节点
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
 - select:
     name: 国内
     policies:
     - DIRECT
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+- auto_test:
+    name: 美国节点
+    policies:
+    - 订阅
+    flatten: true
+    filter: (?i)美|🇺🇸|美国|US|States|American
+    tolerance: 0
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+- auto_test:
+    name: 香港节点
+    policies:
+    - 订阅
+    flatten: true
+    filter: (?i)港|🇭🇰|香港|HK|Hong
+    tolerance: 0
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+- auto_test:
+    name: 日本节点
+    policies:
+    - 订阅
+    flatten: true
+    filter: (?i)日|🇯🇵|日本|JP|Japan|东京|Tokyo
+    tolerance: 0
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+- auto_test:
+    name: 韩国节点
+    policies:
+    - 订阅
+    flatten: true
+    filter: (?i)韩|🇰🇷|韩国|KR|Korea|首尔|Seoul
+    tolerance: 0
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
+- auto_test:
+    name: 新加坡节点
+    policies:
+    - 订阅
+    flatten: true
+    filter: (?i)新加坡|🇸🇬|狮|SG|Singapore
+    tolerance: 0
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+- auto_test:
+    name: 台湾节点
+    policies:
+    - 订阅
+    flatten: true
+    filter: (?i)台|🇹🇼|台湾|TW|Taiwan
+    tolerance: 0
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
 - select:
     name: ApplePush
     policies:
