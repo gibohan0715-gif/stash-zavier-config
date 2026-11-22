@@ -1,0 +1,780 @@
+mode: rule
+log-level: info
+ipv6: false
+allow-lan: false
+mixed-port: 7890
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  enhanced-mode: redir-host
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  nameserver:
+  - https://dns.google/dns-query
+  - https://1.1.1.1/dns-query
+  proxy-server-nameserver:
+  - https://dns.google/dns-query
+  - https://1.1.1.1/dns-query
+  nameserver-policy:
+    'geosite:cn':
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    'rule-set:DomesticSocial':
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.weixin.qq.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.wx.qq.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.qq.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.tencent.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.wechat.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.douyin.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.douyinpic.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.douyinstatic.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.douyincdn.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.douyinvod.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.snssdk.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.bytedance.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.iesdouyin.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.amemv.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.toutiao.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.ixigua.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.pstatp.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.tencent-cloud.net:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.weibo.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.weibo.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.sina.com.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.xiaohongshu.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.douban.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.kuaishou.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.kwai.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.zhihu.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.immomo.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.tantan.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.soulapp.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.soul.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.bilibili.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.qzone.qq.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.qlogo.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.qqmail.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+proxy-providers:
+  Subscribe:
+    type: http
+    url: http://your-service-provider
+    interval: 86400
+    path: ./Subscribe.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Subscribe2:
+    type: http
+    url: http://your-service-provider
+    interval: 86400
+    path: ./Subscribe2.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Subscribe3:
+    type: http
+    url: http://your-service-provider
+    interval: 86400
+    path: ./Subscribe3.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Subscribe4:
+    type: http
+    url: http://your-service-provider
+    interval: 86400
+    path: ./Subscribe4.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  Subscribe5:
+    type: http
+    url: http://your-service-provider
+    interval: 86400
+    path: ./Subscribe5.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+proxies: []
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 日本节点
+  - 韩国节点
+  - 新加坡节点
+  - 台湾节点
+  - 手动切换
+  - DIRECT
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+- name: 手动切换
+  type: select
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Static.png
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+- name: 美国节点
+  type: select
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+  filter: (?i)美|🇺🇸|美国|US|States|American
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+- name: 香港节点
+  type: select
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+  filter: (?i)港|🇭🇰|香港|HK|Hong
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+- name: 日本节点
+  type: select
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+  filter: (?i)日|🇯🇵|日本|JP|Japan
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+- name: 韩国节点
+  type: select
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+  filter: (?i)韩|🇰🇷|韩国|KR|Korea|首尔|Seoul
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
+- name: 新加坡节点
+  type: select
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+  filter: (?i)坡|🇸🇬|新加坡|狮城|SG|Singapore
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+- name: 台湾节点
+  type: select
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
+  filter: (?i)台|🇹🇼|台湾|TW|Tai
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
+- name: AI
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 日本节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png
+- name: 游戏
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 日本节点
+  - DIRECT
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
+- name: 音乐
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
+- name: 国外社交
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+- name: 国内社交
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/WeChat.png
+- name: 微软服务
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
+- name: 漏网之鱼
+  type: select
+  proxies:
+  - DIRECT
+  - 美国节点
+  - 香港节点
+  - 日本节点
+  - 韩国节点
+  - 新加坡节点
+  - 台湾节点
+  - 自动选择
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+- name: 国内媒体
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
+- name: 国外媒体
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+- name: Google
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
+- name: Disney
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Disney.png
+- name: Twitter
+  type: select
+  proxies: &id001
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Twitter.png
+- name: Apple服务
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+- name: YouTube
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+- name: Netflix
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+- name: NetEase
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
+- name: Telegram
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+- name: Facebook
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Facebook.png
+- name: Instagram
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png
+- name: ApplePush
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+rule-providers:
+  Reject:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/AdvertisingLite_classical_2153b29c85ab207f.yaml
+    path: ./ruleset/Reject.yaml
+    interval: 86400
+  Privacy:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Privacy_classical_9f1f2f25eb233756.yaml
+    path: ./ruleset/Privacy.yaml
+    interval: 86400
+  AI:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/GlobalAI_classical_918a93eb64ea2553.yaml
+    path: ./ruleset/AI.yaml
+    interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Google_classical_929223864b74335e.yaml
+    path: ./ruleset/Google.yaml
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Apple_classical_7c359a11166a9fda.yaml
+    path: ./ruleset/Apple.yaml
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Microsoft_classical_935325d09e91ba28.yaml
+    path: ./ruleset/Microsoft.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Telegram_classical_ce83e571716d5a20.yaml
+    path: ./ruleset/Telegram.yaml
+    interval: 86400
+  Twitter:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Twitter_classical_d405159ccf6c8682.yaml
+    path: ./ruleset/Twitter.yaml
+    interval: 86400
+  Facebook:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Facebook_classical_3eb8d1939ee51178.yaml
+    path: ./ruleset/Facebook.yaml
+    interval: 86400
+  Instagram:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Instagram_classical_8f2bea3580d2acf2.yaml
+    path: ./ruleset/Instagram.yaml
+    interval: 86400
+  ForeignSocial:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/SocialMediaGlobal_classical_90965bd56bc873f2.yaml
+    path: ./ruleset/ForeignSocial.yaml
+    interval: 86400
+  WeChat:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/WeChat_classical_b33d1fc8be9d6b0b.yaml
+    path: ./ruleset/WeChat.yaml
+    interval: 86400
+  Weibo:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Weibo_classical_b0ce727871009368.yaml
+    path: ./ruleset/Weibo.yaml
+    interval: 86400
+  XiaoHongShu:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/XiaoHongShu_classical_6f0094248b3bd39c.yaml
+    path: ./ruleset/XiaoHongShu.yaml
+    interval: 86400
+  DouBan:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/DouBan_classical_70d9731c32ed4abe.yaml
+    path: ./ruleset/DouBan.yaml
+    interval: 86400
+  DouYin:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/DouYin_classical_2177efdc2538936b.yaml
+    path: ./ruleset/DouYin.yaml
+    interval: 86400
+  KuaiShou:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/KuaiShou_classical_4770d22e3e790f77.yaml
+    path: ./ruleset/KuaiShou.yaml
+    interval: 86400
+  Zhihu:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Zhihu_classical_9a18393b2929111d.yaml
+    path: ./ruleset/Zhihu.yaml
+    interval: 86400
+  Steam:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Steam_classical_30f94ece8f1dec40.yaml
+    path: ./ruleset/Steam.yaml
+    interval: 86400
+  Epic:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Epic_classical_50da219eb0a0b20d.yaml
+    path: ./ruleset/Epic.yaml
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/YouTube_classical_1656bc97cbd46d7e.yaml
+    path: ./ruleset/YouTube.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Netflix_classical_d7008b3795ce9397.yaml
+    path: ./ruleset/Netflix.yaml
+    interval: 86400
+  Disney:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Disney_classical_2398f526d51e3086.yaml
+    path: ./ruleset/Disney.yaml
+    interval: 86400
+  Spotify:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Spotify_classical_1c7784b68b72f612.yaml
+    path: ./ruleset/Spotify.yaml
+    interval: 86400
+  PrimeVideo:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/PrimeVideo_classical_b6b3ccc981f605f8.yaml
+    path: ./ruleset/PrimeVideo.yaml
+    interval: 86400
+  HBO:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/HBO_classical_78d768da42a57147.yaml
+    path: ./ruleset/HBO.yaml
+    interval: 86400
+  Hulu:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Hulu_classical_3ab1bf5853c5c37d.yaml
+    path: ./ruleset/Hulu.yaml
+    interval: 86400
+  AppleTV:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/AppleTV_classical_86f028de323ba85a.yaml
+    path: ./ruleset/AppleTV.yaml
+    interval: 86400
+  GlobalMedia:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/GlobalMedia_classical_da830d4f2281dce2.yaml
+    path: ./ruleset/GlobalMedia.yaml
+    interval: 86400
+  NetEase:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/NetEase_classical_915449ffd145ea49.yaml
+    path: ./ruleset/NetEase.yaml
+    interval: 86400
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/NetEaseMusic_classical_78fd3c63ad6bf2ff.yaml
+    path: ./ruleset/NetEaseMusic.yaml
+    interval: 86400
+  BiliBili:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/BiliBili_classical_e094628621c39bfc.yaml
+    path: ./ruleset/BiliBili.yaml
+    interval: 86400
+  iQIYI:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/iQIYI_classical_ad93b8986f4f3c6e.yaml
+    path: ./ruleset/iQIYI.yaml
+    interval: 86400
+  TencentVideo:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/TencentVideo_classical_688fe6be12e71311.yaml
+    path: ./ruleset/TencentVideo.yaml
+    interval: 86400
+  Youku:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Youku_classical_9f510345626ed9fc.yaml
+    path: ./ruleset/Youku.yaml
+    interval: 86400
+  Migu:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Migu_classical_92340e2009e5218a.yaml
+    path: ./ruleset/Migu.yaml
+    interval: 86400
+  HunanTV:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/HunanTV_classical_fd385c4ec9d175af.yaml
+    path: ./ruleset/HunanTV.yaml
+    interval: 86400
+  Sohu:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Sohu_classical_1c0e90629257fbc2.yaml
+    path: ./ruleset/Sohu.yaml
+    interval: 86400
+  LeTV:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/LeTV_classical_ee22353503f2f870.yaml
+    path: ./ruleset/LeTV.yaml
+    interval: 86400
+  PPTV:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/PPTV_classical_cb127b9193b556df.yaml
+    path: ./ruleset/PPTV.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/ChinaMedia_classical_56445540ce48a070.yaml
+    path: ./ruleset/ChinaMedia.yaml
+    interval: 86400
+  China:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/China_classical_fb107a60e969b06c.yaml
+    path: ./ruleset/China.yaml
+    interval: 86400
+  ChinaIPs:
+    type: http
+    behavior: ipcidr
+    url: https://magicrule.pages.dev/data/_shared/artifacts/ChinaIPs_ipcidr_460acc276e282d84.yaml
+    path: ./ruleset/ChinaIPs.yaml
+    interval: 86400
+  Global:
+    type: http
+    behavior: classical
+    url: https://magicrule.pages.dev/data/_shared/artifacts/Global_classical_031fdec1419956ef.yaml
+    path: ./ruleset/Global.yaml
+    interval: 86400
+  ApplePush:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/ApplePush.yaml
+    path: ./ruleset/ApplePush.yaml
+    interval: 86400
+  DomesticSocial:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/DomesticSocial.yaml
+    path: ./ruleset/DomesticSocial.yaml
+    interval: 86400
+  DomesticSocialHand:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/DomesticSocialHand.yaml
+    path: ./ruleset/DomesticSocialHand.yaml
+    interval: 86400
+rules:
+- RULE-SET,Reject,REJECT
+- RULE-SET,Privacy,REJECT
+- DOMAIN-SUFFIX,emby.alexzavier.ccwu.cc,DIRECT
+- RULE-SET,AI,AI
+- RULE-SET,Google,Google
+- RULE-SET,ApplePush,ApplePush
+- RULE-SET,Apple,Apple服务
+- RULE-SET,Microsoft,微软服务
+- RULE-SET,Telegram,Telegram
+- RULE-SET,Twitter,Twitter
+- RULE-SET,Facebook,Facebook
+- RULE-SET,Instagram,Instagram
+- RULE-SET,ForeignSocial,国外社交
+- RULE-SET,WeChat,国内社交
+- RULE-SET,Weibo,国内社交
+- RULE-SET,XiaoHongShu,国内社交
+- RULE-SET,DouBan,国内社交
+- RULE-SET,DouYin,国内社交
+- RULE-SET,KuaiShou,国内社交
+- RULE-SET,Zhihu,国内社交
+- RULE-SET,DomesticSocialHand,国内社交
+- RULE-SET,Steam,游戏
+- RULE-SET,Epic,游戏
+- RULE-SET,YouTube,YouTube
+- RULE-SET,Netflix,Netflix
+- RULE-SET,Disney,Disney
+- RULE-SET,Spotify,音乐
+- RULE-SET,PrimeVideo,国外媒体
+- RULE-SET,HBO,国外媒体
+- RULE-SET,Hulu,国外媒体
+- RULE-SET,AppleTV,国外媒体
+- RULE-SET,GlobalMedia,国外媒体
+- RULE-SET,NetEase,NetEase
+- RULE-SET,NetEaseMusic,NetEase
+- RULE-SET,BiliBili,国内媒体
+- RULE-SET,iQIYI,国内媒体
+- RULE-SET,TencentVideo,国内媒体
+- RULE-SET,Youku,国内媒体
+- RULE-SET,Migu,国内媒体
+- RULE-SET,HunanTV,国内媒体
+- RULE-SET,Sohu,国内媒体
+- RULE-SET,LeTV,国内媒体
+- RULE-SET,PPTV,国内媒体
+- RULE-SET,ChinaMedia,国内媒体
+- RULE-SET,China,DIRECT
+- RULE-SET,ChinaIPs,DIRECT,no-resolve
+- RULE-SET,Global,节点选择
+- GEOIP,CN,DIRECT
+- MATCH,漏网之鱼
