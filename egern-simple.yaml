@@ -159,6 +159,9 @@ policy_groups:
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
 rules:
 - rule_set:
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Direct.yaml
+    policy: DIRECT
+- rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/AdvertisingLite.yaml
     policy: REJECT
 - rule_set:
