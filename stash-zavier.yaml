@@ -172,16 +172,24 @@ proxy-groups:
   - 香港节点
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
-- name: Telegram
+- name: 国外社交
   type: select
   proxies:
   - 节点选择
   - 自动选择
   - 美国节点
-  - 新加坡节点
   - 香港节点
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+- name: 国内社交
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/WeChat.png
 - name: Apple服务
   type: select
   proxies:
@@ -231,130 +239,6 @@ proxy-groups:
   - 自动选择
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
-- name: Twitter
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Twitter.png
-- name: Facebook
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Facebook.png
-- name: Instagram
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png
-- name: TikTok
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
-- name: Whatsapp
-  type: select
-  proxies: &id001
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-- name: Reddit
-  type: select
-  proxies: *id001
-- name: Discord
-  type: select
-  proxies: *id001
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Discord.png
-- name: LinkedIn
-  type: select
-  proxies: *id001
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Linkedin.png
-- name: Pinterest
-  type: select
-  proxies: *id001
-- name: Threads
-  type: select
-  proxies: *id001
-- name: Line
-  type: select
-  proxies: *id001
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Line.png
-- name: KakaoTalk
-  type: select
-  proxies: *id001
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Kakao.png
-- name: Tumblr
-  type: select
-  proxies: *id001
-- name: VK
-  type: select
-  proxies: *id001
-- name: TruthSocial
-  type: select
-  proxies: *id001
-- name: Snapchat
-  type: select
-  proxies: *id001
-- name: Signal
-  type: select
-  proxies: *id001
-- name: Viber
-  type: select
-  proxies: *id001
-- name: Bluesky
-  type: select
-  proxies: *id001
-- name: Weibo
-  type: select
-  proxies: &id002
-  - DIRECT
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Weibo.png
-- name: XiaoHongShu
-  type: select
-  proxies: *id002
-- name: DouBan
-  type: select
-  proxies: *id002
-- name: QQ
-  type: select
-  proxies: *id002
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/QQ.png
-- name: Kuaishou
-  type: select
-  proxies: *id002
-- name: ZhiHu
-  type: select
-  proxies: *id002
-- name: Momo
-  type: select
-  proxies: *id002
-- name: Tantan
-  type: select
-  proxies: *id002
-- name: Soul
-  type: select
-  proxies: *id002
 - name: ApplePush
   type: select
   proxies:
@@ -400,24 +284,6 @@ proxy-groups:
   - 美国节点
   - 香港节点
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
-- name: DouYin
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
-- name: WeChat
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/WeChat.png
 - name: 国内媒体
   type: select
   proxies:
@@ -847,13 +713,12 @@ rules:
 - DOMAIN-SUFFIX,pieces.app,AI
 - DOMAIN-SUFFIX,supermaven.com,AI
 - DOMAIN-SUFFIX,codegpt.co,AI
-- DOMAIN-SUFFIX, Cody
 - DOMAIN-SUFFIX,codeium.com,AI
 - RULE-SET,AI,AI
 - RULE-SET,Claude,AI
 - RULE-SET,Gemini,AI
 - RULE-SET,Copilot,AI
-- RULE-SET,Telegram,Telegram
+- RULE-SET,Telegram,国外社交
 - RULE-SET,Google,Google
 - DOMAIN-SUFFIX,push.apple.com,ApplePush
 - DOMAIN,api.push.apple.com,ApplePush
@@ -861,45 +726,45 @@ rules:
 - DOMAIN,courier.push.apple.com,ApplePush
 - RULE-SET,Apple,Apple服务
 - RULE-SET,Microsoft,微软服务
-- RULE-SET,Twitter,Twitter
-- RULE-SET,Facebook,Facebook
-- RULE-SET,Instagram,Instagram
-- RULE-SET,TikTok,TikTok
-- RULE-SET,Whatsapp,Whatsapp
-- RULE-SET,Reddit,Reddit
-- RULE-SET,Discord,Discord
-- RULE-SET,LinkedIn,LinkedIn
-- RULE-SET,Pinterest,Pinterest
-- RULE-SET,Threads,Threads
-- RULE-SET,Line,Line
-- RULE-SET,KakaoTalk,KakaoTalk
-- RULE-SET,Tumblr,Tumblr
-- RULE-SET,VK,VK
-- RULE-SET,TruthSocial,TruthSocial
-- RULE-SET,Weibo,Weibo
-- RULE-SET,XiaoHongShu,XiaoHongShu
-- RULE-SET,DouBan,DouBan
-- DOMAIN-SUFFIX,snapchat.com,Snapchat
-- DOMAIN-SUFFIX,snap.com,Snapchat
-- DOMAIN-SUFFIX,signal.org,Signal
-- DOMAIN-SUFFIX,signal.me,Signal
-- DOMAIN-SUFFIX,viber.com,Viber
-- DOMAIN-SUFFIX,bsky.app,Bluesky
-- DOMAIN-SUFFIX,bsky.social,Bluesky
-- DOMAIN-SUFFIX,blueskyweb.xyz,Bluesky
-- DOMAIN-SUFFIX,qzone.qq.com,QQ
-- DOMAIN-SUFFIX,qlogo.cn,QQ
-- DOMAIN-SUFFIX,qqmail.com,QQ
-- DOMAIN-SUFFIX,kuaishou.com,Kuaishou
-- DOMAIN-SUFFIX,kwai.com,Kuaishou
-- DOMAIN-SUFFIX,kuaishouapp.com,Kuaishou
-- DOMAIN-SUFFIX,zhihu.com,ZhiHu
-- DOMAIN-SUFFIX,zhihuapp.com,ZhiHu
-- DOMAIN-SUFFIX,immomo.com,Momo
-- DOMAIN-SUFFIX,momocdn.com,Momo
-- DOMAIN-SUFFIX,tantan.com,Tantan
-- DOMAIN-SUFFIX,soulapp.cn,Soul
-- DOMAIN-SUFFIX,soul.cn,Soul
+- RULE-SET,Twitter,国外社交
+- RULE-SET,Facebook,国外社交
+- RULE-SET,Instagram,国外社交
+- RULE-SET,TikTok,国外社交
+- RULE-SET,Whatsapp,国外社交
+- RULE-SET,Reddit,国外社交
+- RULE-SET,Discord,国外社交
+- RULE-SET,LinkedIn,国外社交
+- RULE-SET,Pinterest,国外社交
+- RULE-SET,Threads,国外社交
+- RULE-SET,Line,国外社交
+- RULE-SET,KakaoTalk,国外社交
+- RULE-SET,Tumblr,国外社交
+- RULE-SET,VK,国外社交
+- RULE-SET,TruthSocial,国外社交
+- RULE-SET,Weibo,国内社交
+- RULE-SET,XiaoHongShu,国内社交
+- RULE-SET,DouBan,国内社交
+- DOMAIN-SUFFIX,snapchat.com,国外社交
+- DOMAIN-SUFFIX,snap.com,国外社交
+- DOMAIN-SUFFIX,signal.org,国外社交
+- DOMAIN-SUFFIX,signal.me,国外社交
+- DOMAIN-SUFFIX,viber.com,国外社交
+- DOMAIN-SUFFIX,bsky.app,国外社交
+- DOMAIN-SUFFIX,bsky.social,国外社交
+- DOMAIN-SUFFIX,blueskyweb.xyz,国外社交
+- DOMAIN-SUFFIX,qzone.qq.com,国内社交
+- DOMAIN-SUFFIX,qlogo.cn,国内社交
+- DOMAIN-SUFFIX,qqmail.com,国内社交
+- DOMAIN-SUFFIX,kuaishou.com,国内社交
+- DOMAIN-SUFFIX,kwai.com,国内社交
+- DOMAIN-SUFFIX,kuaishouapp.com,国内社交
+- DOMAIN-SUFFIX,zhihu.com,国内社交
+- DOMAIN-SUFFIX,zhihuapp.com,国内社交
+- DOMAIN-SUFFIX,immomo.com,国内社交
+- DOMAIN-SUFFIX,momocdn.com,国内社交
+- DOMAIN-SUFFIX,tantan.com,国内社交
+- DOMAIN-SUFFIX,soulapp.cn,国内社交
+- DOMAIN-SUFFIX,soul.cn,国内社交
 - RULE-SET,Steam,游戏
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Netflix,Netflix
@@ -912,10 +777,10 @@ rules:
 - RULE-SET,Peacock,国外媒体
 - RULE-SET,AppleTV,国外媒体
 - RULE-SET,GlobalMedia,国外媒体
-- RULE-SET,DouYin,DouYin
+- RULE-SET,DouYin,国内社交
 - RULE-SET,NetEase,NetEase
 - RULE-SET,NetEaseMusic,NetEase
-- RULE-SET,WeChat,WeChat
+- RULE-SET,WeChat,国内社交
 - RULE-SET,BiliBili,国内媒体
 - RULE-SET,iQIYI,国内媒体
 - RULE-SET,TencentVideo,国内媒体
