@@ -38,7 +38,7 @@ dns:
     'geosite:cn':
       - https://dns.alidns.com/dns-query
       - https://doh.pub/dns-query
-    'geosite:geolocation-!cn':
+    '+.*':
       - https://dns.google/dns-query
       - https://1.1.1.1/dns-query
 
