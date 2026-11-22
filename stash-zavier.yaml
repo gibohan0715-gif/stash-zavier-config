@@ -174,12 +174,6 @@ proxy-groups:
   - 香港节点
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
-- name: Emby
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
 - name: Apple服务
   type: select
   proxies:
