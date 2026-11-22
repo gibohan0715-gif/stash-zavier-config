@@ -169,15 +169,6 @@ proxy-groups:
   - 新加坡节点
   - 香港节点
   - 手动切换
-- name: 流媒体
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 日本节点
-  - 手动切换
 - name: Emby
   type: select
   proxies:
@@ -266,6 +257,30 @@ proxy-groups:
   - 自动选择
   - 美国节点
   - 香港节点
+- name: YouTube
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+- name: Netflix
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+- name: Disney
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
 rule-providers:
   Reject:
     type: http
@@ -419,9 +434,9 @@ rules:
 - RULE-SET,Instagram,Instagram
 - RULE-SET,TikTok,TikTok
 - RULE-SET,Steam,游戏
-- RULE-SET,YouTube,流媒体
-- RULE-SET,Netflix,流媒体
-- RULE-SET,Disney,流媒体
+- RULE-SET,YouTube,YouTube
+- RULE-SET,Netflix,Netflix
+- RULE-SET,Disney,Disney
 - RULE-SET,Spotify,音乐
 - RULE-SET,DouYin,DIRECT
 - RULE-SET,ChinaMax,DIRECT
