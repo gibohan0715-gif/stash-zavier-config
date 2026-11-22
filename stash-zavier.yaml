@@ -199,15 +199,6 @@ proxy-groups:
   - 自动选择
   - 美国节点
   - 香港节点
-- name: 社交
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 新加坡节点
-  - 手动切换
 - name: 游戏
   type: select
   proxies:
@@ -234,6 +225,38 @@ proxy-groups:
   - 新加坡节点
   - 台湾节点
   - 自动选择
+  - 手动切换
+- name: Twitter
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+- name: Facebook
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+- name: Instagram
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+- name: TikTok
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
   - 手动切换
 rule-providers:
   Reject:
@@ -379,10 +402,10 @@ rules:
 - RULE-SET,Google,Google
 - RULE-SET,Apple,Apple服务
 - RULE-SET,Microsoft,微软服务
-- RULE-SET,Twitter,社交
-- RULE-SET,Facebook,社交
-- RULE-SET,Instagram,社交
-- RULE-SET,TikTok,社交
+- RULE-SET,Twitter,Twitter
+- RULE-SET,Facebook,Facebook
+- RULE-SET,Instagram,Instagram
+- RULE-SET,TikTok,TikTok
 - RULE-SET,Steam,游戏
 - RULE-SET,YouTube,流媒体
 - RULE-SET,Netflix,流媒体
