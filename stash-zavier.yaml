@@ -28,7 +28,7 @@ dns:
   - https://dns.google/dns-query
   - https://1.1.1.1/dns-query
   nameserver-policy:
-    'geosite:cn':
+    'rule-set:ChinaDomain':
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     '+.*':
