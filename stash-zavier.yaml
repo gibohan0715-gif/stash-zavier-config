@@ -258,6 +258,14 @@ proxy-groups:
   - 美国节点
   - 香港节点
   - 手动切换
+- name: ApplePush
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
 rule-providers:
   Reject:
     type: http
@@ -400,6 +408,10 @@ rules:
 - RULE-SET,Copilot,AI
 - RULE-SET,Telegram,Telegram
 - RULE-SET,Google,Google
+- DOMAIN-SUFFIX,push.apple.com,ApplePush
+- DOMAIN,api.push.apple.com,ApplePush
+- DOMAIN,gateway.push.apple.com,ApplePush
+- DOMAIN,courier.push.apple.com,ApplePush
 - RULE-SET,Apple,Apple服务
 - RULE-SET,Microsoft,微软服务
 - RULE-SET,Twitter,Twitter
