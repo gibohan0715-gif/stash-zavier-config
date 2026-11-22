@@ -76,6 +76,54 @@ dns:
     +.tencent-cloud.net:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+    +.weibo.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.weibo.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.sina.com.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.xiaohongshu.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.douban.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.kuaishou.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.kwai.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.zhihu.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.immomo.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.tantan.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.soulapp.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.soul.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.bilibili.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.qzone.qq.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.qlogo.cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.qqmail.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
     '+.*':
     - https://dns.google/dns-query
     - https://1.1.1.1/dns-query
