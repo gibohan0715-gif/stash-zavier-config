@@ -28,11 +28,11 @@ dns:
     - https://dns.google/dns-query
   forward:
   - proxy_rule_set:
-      match: https://rule2-ze9.pages.dev/data/_shared/artifacts/AdvertisingLite_rules_9124330bac3304f3.yaml
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/AdvertisingLite.yaml
       value: REJECT
       disabled: false
   - proxy_rule_set:
-      match: https://rule2-ze9.pages.dev/data/_shared/artifacts/China_rules_2039832124262e98.yaml
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/China.yaml
       value: Domestic-Encrypted-DNS
       disabled: false
   - domain_wildcard:
@@ -84,6 +84,7 @@ policy_groups:
 - select:
     name: 国外
     policies:
+    - 订阅
     - 美国节点
     - 香港节点
     - 日本节点
@@ -158,43 +159,43 @@ policy_groups:
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
 rules:
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/AdvertisingLite_rules_9124330bac3304f3.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/AdvertisingLite.yaml
     policy: REJECT
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/Privacy_rules_d8cf1d1301917b3b.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Privacy.yaml
     policy: REJECT
 - domain_suffix:
     match: emby.alexzavier.ccwu.cc
     policy: DIRECT
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/Apple_APNs_rules_7cfe5e3651847673.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
     policy: ApplePush
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/China_rules_2039832124262e98.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/China.yaml
     policy: 国内
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/ChinaIPs_rules_10c6e31c88badcff.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaIPs.yaml
     policy: 国内
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/ChinaMedia_rules_758df5c4d1322c58.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaMedia.yaml
     policy: 国内
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/ChinaGame_rules_a9f057ca8d3af047.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaGame.yaml
     policy: 国内
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/ChinaIPTV_rules_11548625be7724c0.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaIPTV.yaml
     policy: 国内
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/GlobalAI_rules_f7fcf61ae36f83d8.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/GlobalAI.yaml
     policy: 国外
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/SocialMediaGlobal_rules_1a0d2bd55e74ca3c.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/SocialMediaGlobal.yaml
     policy: 国外
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/GlobalMedia_rules_84693c4f884f148c.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/GlobalMedia.yaml
     policy: 国外
 - rule_set:
-    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/Global_rules_8536df1d600294d1.yaml
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Global.yaml
     policy: 国外
 - geoip:
     match: CN
