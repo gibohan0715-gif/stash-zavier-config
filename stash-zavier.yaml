@@ -108,10 +108,12 @@ proxy-groups:
   - 台湾节点
   - 手动切换
   - DIRECT
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/target.svg
 - name: 手动切换
   type: select
   use:
   - Subscribe
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/internetcomputer.svg
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -119,31 +121,37 @@ proxy-groups:
   tolerance: 50
   use:
   - Subscribe
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/speedtest.svg
 - name: 美国节点
   type: select
   use:
   - Subscribe
   filter: (?i)美|🇺🇸|美国|US|States|American
+  icon: https://flagcdn.com/us.svg
 - name: 香港节点
   type: select
   use:
   - Subscribe
   filter: (?i)港|🇭🇰|香港|HK|Hong
+  icon: https://flagcdn.com/hk.svg
 - name: 日本节点
   type: select
   use:
   - Subscribe
   filter: (?i)日|🇯🇵|日本|JP|Japan
+  icon: https://flagcdn.com/jp.svg
 - name: 新加坡节点
   type: select
   use:
   - Subscribe
   filter: (?i)坡|🇸🇬|新加坡|狮城|SG|Singapore
+  icon: https://flagcdn.com/sg.svg
 - name: 台湾节点
   type: select
   use:
   - Subscribe
   filter: (?i)台|🇹🇼|台湾|TW|Tai
+  icon: https://flagcdn.com/tw.svg
 - name: AI
   type: select
   proxies:
@@ -153,6 +161,7 @@ proxy-groups:
   - 香港节点
   - 日本节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg
 - name: Google
   type: select
   proxies:
@@ -161,6 +170,7 @@ proxy-groups:
   - 美国节点
   - 香港节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/google.svg
 - name: Telegram
   type: select
   proxies:
@@ -169,11 +179,13 @@ proxy-groups:
   - 新加坡节点
   - 香港节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/telegram.svg
 - name: Emby
   type: select
   proxies:
   - DIRECT
   - 节点选择
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/emby.svg
 - name: Apple服务
   type: select
   proxies:
@@ -182,6 +194,7 @@ proxy-groups:
   - 自动选择
   - 美国节点
   - 香港节点
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/apple.svg
 - name: 微软服务
   type: select
   proxies:
@@ -190,6 +203,7 @@ proxy-groups:
   - 自动选择
   - 美国节点
   - 香港节点
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg
 - name: 游戏
   type: select
   proxies:
@@ -199,6 +213,7 @@ proxy-groups:
   - 香港节点
   - 日本节点
   - DIRECT
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/steam.svg
 - name: 音乐
   type: select
   proxies:
@@ -206,6 +221,7 @@ proxy-groups:
   - 自动选择
   - 美国节点
   - 香港节点
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/spotify.svg
 - name: 漏网之鱼
   type: select
   proxies:
@@ -217,6 +233,7 @@ proxy-groups:
   - 台湾节点
   - 自动选择
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/radar.svg
 - name: Twitter
   type: select
   proxies:
@@ -225,6 +242,7 @@ proxy-groups:
   - 美国节点
   - 香港节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/twitter.svg
 - name: Facebook
   type: select
   proxies:
@@ -233,6 +251,7 @@ proxy-groups:
   - 美国节点
   - 香港节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg
 - name: Instagram
   type: select
   proxies:
@@ -241,6 +260,7 @@ proxy-groups:
   - 美国节点
   - 香港节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg
 - name: TikTok
   type: select
   proxies:
@@ -249,6 +269,7 @@ proxy-groups:
   - 美国节点
   - 香港节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg
 - name: ApplePush
   type: select
   proxies:
@@ -257,6 +278,7 @@ proxy-groups:
   - 自动选择
   - 美国节点
   - 香港节点
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/apple.svg
 - name: YouTube
   type: select
   proxies:
@@ -265,6 +287,7 @@ proxy-groups:
   - 美国节点
   - 香港节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg
 - name: Netflix
   type: select
   proxies:
@@ -273,6 +296,7 @@ proxy-groups:
   - 美国节点
   - 香港节点
   - 手动切换
+  icon: https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/netflix.svg
 - name: Disney
   type: select
   proxies:
