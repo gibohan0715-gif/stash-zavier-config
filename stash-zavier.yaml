@@ -89,6 +89,12 @@ proxy-groups:
   - 手动切换
   - DIRECT
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+  use:
+  - Subscribe
+  - Subscribe2
+  - Subscribe3
+  - Subscribe4
+  - Subscribe5
 - name: 手动切换
   type: select
   use:
