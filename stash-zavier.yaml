@@ -615,6 +615,7 @@ rules:
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Netflix,Netflix
 - RULE-SET,Disney,Disney
+- RULE-SET,Spotify,音乐
 - RULE-SET,PrimeVideo,国外媒体
 - RULE-SET,HBO,国外媒体
 - RULE-SET,Hulu,国外媒体
@@ -622,7 +623,6 @@ rules:
 - RULE-SET,Peacock,国外媒体
 - RULE-SET,AppleTV,国外媒体
 - RULE-SET,GlobalMedia,国外媒体
-- RULE-SET,Spotify,音乐
 - RULE-SET,DouYin,DouYin
 - RULE-SET,NetEase,NetEase
 - RULE-SET,NetEaseMusic,NetEase
