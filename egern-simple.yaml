@@ -84,7 +84,6 @@ policy_groups:
 - select:
     name: 国外
     policies:
-    - 订阅
     - 美国节点
     - 香港节点
     - 日本节点
@@ -96,6 +95,12 @@ policy_groups:
     name: 国内
     policies:
     - DIRECT
+    - 美国节点
+    - 香港节点
+    - 日本节点
+    - 韩国节点
+    - 新加坡节点
+    - 台湾节点
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
 - auto_test:
     name: 美国节点
