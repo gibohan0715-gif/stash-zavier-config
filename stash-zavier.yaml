@@ -321,6 +321,24 @@ proxy-groups:
   - 美国节点
   - 香港节点
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/WeChat.png
+- name: 国内媒体
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
+- name: 国外媒体
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
 rule-providers:
   Reject:
     type: http
@@ -472,6 +490,108 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
     path: ./ruleset/WeChat.yaml
     interval: 86400
+  BiliBili:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
+    path: ./ruleset/BiliBili.yaml
+    interval: 86400
+  iQIYI:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iQIYI/iQIYI.yaml
+    path: ./ruleset/iQIYI.yaml
+    interval: 86400
+  TencentVideo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TencentVideo/TencentVideo.yaml
+    path: ./ruleset/TencentVideo.yaml
+    interval: 86400
+  Youku:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Youku/Youku.yaml
+    path: ./ruleset/Youku.yaml
+    interval: 86400
+  Migu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Migu/Migu.yaml
+    path: ./ruleset/Migu.yaml
+    interval: 86400
+  HunanTV:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HunanTV/HunanTV.yaml
+    path: ./ruleset/HunanTV.yaml
+    interval: 86400
+  Sohu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sohu/Sohu.yaml
+    path: ./ruleset/Sohu.yaml
+    interval: 86400
+  LeTV:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LeTV/LeTV.yaml
+    path: ./ruleset/LeTV.yaml
+    interval: 86400
+  PPTV:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PPTV/PPTV.yaml
+    path: ./ruleset/PPTV.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    path: ./ruleset/ChinaMedia.yaml
+    interval: 86400
+  PrimeVideo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.yaml
+    path: ./ruleset/PrimeVideo.yaml
+    interval: 86400
+  HBO:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.yaml
+    path: ./ruleset/HBO.yaml
+    interval: 86400
+  Hulu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hulu/Hulu.yaml
+    path: ./ruleset/Hulu.yaml
+    interval: 86400
+  ParamountPlus:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ParamountPlus/ParamountPlus.yaml
+    path: ./ruleset/ParamountPlus.yaml
+    interval: 86400
+  Peacock:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Peacock/Peacock.yaml
+    path: ./ruleset/Peacock.yaml
+    interval: 86400
+  AppleTV:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleTV/AppleTV.yaml
+    path: ./ruleset/AppleTV.yaml
+    interval: 86400
+  GlobalMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+    path: ./ruleset/GlobalMedia_Classical.yaml
+    interval: 86400
 rules:
 - DOMAIN-SUFFIX,emby.alexzavier.ccwu.cc,DIRECT
 - RULE-SET,Reject,REJECT
@@ -495,11 +615,28 @@ rules:
 - RULE-SET,YouTube,YouTube
 - RULE-SET,Netflix,Netflix
 - RULE-SET,Disney,Disney
+- RULE-SET,PrimeVideo,国外媒体
+- RULE-SET,HBO,国外媒体
+- RULE-SET,Hulu,国外媒体
+- RULE-SET,ParamountPlus,国外媒体
+- RULE-SET,Peacock,国外媒体
+- RULE-SET,AppleTV,国外媒体
+- RULE-SET,GlobalMedia,国外媒体
 - RULE-SET,Spotify,音乐
 - RULE-SET,DouYin,DouYin
 - RULE-SET,NetEase,NetEase
 - RULE-SET,NetEaseMusic,NetEase
 - RULE-SET,WeChat,WeChat
+- RULE-SET,BiliBili,国内媒体
+- RULE-SET,iQIYI,国内媒体
+- RULE-SET,TencentVideo,国内媒体
+- RULE-SET,Youku,国内媒体
+- RULE-SET,Migu,国内媒体
+- RULE-SET,HunanTV,国内媒体
+- RULE-SET,Sohu,国内媒体
+- RULE-SET,LeTV,国内媒体
+- RULE-SET,PPTV,国内媒体
+- RULE-SET,ChinaMedia,国内媒体
 - RULE-SET,ChinaMax,DIRECT
 - RULE-SET,ChinaDomain,DIRECT
 - RULE-SET,ChinaIp,DIRECT,no-resolve
