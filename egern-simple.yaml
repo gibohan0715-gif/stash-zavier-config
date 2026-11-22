@@ -1,0 +1,139 @@
+# Egern 简化版 by Muse for Zavier — 只有国外/国内两个策略 + ApplePush 单独
+# 规则集: 国内用 MagicRule 大集合 (China/ChinaIPs/ChinaMedia/ChinaGame/ChinaIPTV),
+# 国外用大集合 (GlobalAI/SocialMediaGlobal/GlobalMedia/Global), 不再按单个软件分流
+# DNS 分流: 国内域名 -> 阿里/腾讯 DoH, 其余 -> Google/Cloudflare DoH
+# Egern >= v2.20.0 | 导入: Egern > 配置 > 从 URL 下载本文件, 然后把 国外 里的 5 个占位订阅链接换成自己的订阅链接
+http_port: 6152
+socks_port: 6153
+vif_only: true
+hijack_dns:
+- '*:53'
+geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-without-asn.mmdb
+asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
+proxy_latency_test_url: http://1.1.1.1/generate_204
+direct_latency_test_url: http://wifi.vivo.com.cn/generate_204
+dns:
+  bootstrap:
+  - 223.5.5.5
+  - 119.29.29.29
+  upstreams:
+    Domestic-DNS:
+    - 223.5.5.5
+    - 119.29.29.29
+    Domestic-Encrypted-DNS:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    Foreign-Encrypted-DNS:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  forward:
+  - proxy_rule_set:
+      match: https://rule2-ze9.pages.dev/data/_shared/artifacts/AdvertisingLite_rules_9124330bac3304f3.yaml
+      value: REJECT
+      disabled: false
+  - proxy_rule_set:
+      match: https://rule2-ze9.pages.dev/data/_shared/artifacts/China_rules_2039832124262e98.yaml
+      value: Domestic-Encrypted-DNS
+      disabled: false
+  - domain_wildcard:
+      match: '*'
+      value: Foreign-Encrypted-DNS
+      disabled: false
+  hosts:
+    dns.google:
+    - 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
+    cloudflare-dns.com:
+    - 104.16.249.249, 104.16.248.249, 2606:4700::6810:f8f9, 2606:4700::6810:f9f9
+    dns.alidns.com:
+    - 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1
+    doh.pub:
+    - 1.12.12.12, 120.53.53.53
+    dot.pub:
+    - 1.12.12.12, 120.53.53.53
+  proxy_nameservers:
+  - 119.29.29.29
+  - 223.5.5.5
+real_ip_domains:
+- lancache.steamcontent.com
+- '*.msftconnecttest.com'
+- '*.msftncsi.com'
+- '*.srv.nintendo.net'
+- '*.stun.playstation.net'
+- xbox.*.microsoft.com
+- '*.xboxlive.com'
+- '*.logon.battlenet.com.cn'
+- '*.logon.battle.net'
+- stun.l.google.com
+- easy-login.10099.com.cn
+- '*-update.xoyocdn.com'
+- '*.prod.cloud.netflix.com'
+- appboot.netflix.com
+- '*-appboot.netflix.com'
+policy_groups:
+- external:
+    name: 国外
+    type: select
+    urls:
+    - http://your-service-provider
+    - http://your-service-provider
+    - http://your-service-provider
+    - http://your-service-provider
+    - http://your-service-provider
+    hidden: false
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+- select:
+    name: 国内
+    policies:
+    - DIRECT
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+- select:
+    name: ApplePush
+    policies:
+    - DIRECT
+    - 国外
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+rules:
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/AdvertisingLite_rules_9124330bac3304f3.yaml
+    policy: REJECT
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/Privacy_rules_d8cf1d1301917b3b.yaml
+    policy: REJECT
+- domain_suffix:
+    match: emby.alexzavier.ccwu.cc
+    policy: DIRECT
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/Apple_APNs_rules_7cfe5e3651847673.yaml
+    policy: ApplePush
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/China_rules_2039832124262e98.yaml
+    policy: 国内
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/ChinaIPs_rules_10c6e31c88badcff.yaml
+    policy: 国内
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/ChinaMedia_rules_758df5c4d1322c58.yaml
+    policy: 国内
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/ChinaGame_rules_a9f057ca8d3af047.yaml
+    policy: 国内
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/ChinaIPTV_rules_11548625be7724c0.yaml
+    policy: 国内
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/GlobalAI_rules_f7fcf61ae36f83d8.yaml
+    policy: 国外
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/SocialMediaGlobal_rules_1a0d2bd55e74ca3c.yaml
+    policy: 国外
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/GlobalMedia_rules_84693c4f884f148c.yaml
+    policy: 国外
+- rule_set:
+    match: https://rule2-ze9.pages.dev/data/_shared/artifacts/Global_rules_8536df1d600294d1.yaml
+    policy: 国外
+- geoip:
+    match: CN
+    policy: 国内
+- default:
+    policy: 国外
