@@ -12,9 +12,9 @@ https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/stash
 
 https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/stash-zavier.yaml
 
-### Egern 版（MagicRule 规则集）
+### Egern 简化版（只有国外/国内两个策略 + ApplePush 单独）
 
-https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/egern-magicrule.yaml
+https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/egern-simple.yaml
 
 ## 说明
 
