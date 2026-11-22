@@ -163,72 +163,6 @@ proxy-groups:
   - 日本节点
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ChatGPT.png
-- name: Google
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
-- name: Twitter
-  type: select
-  proxies: &id001
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Twitter.png
-- name: Telegram
-  type: select
-  proxies: *id001
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
-- name: Instagram
-  type: select
-  proxies: *id001
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png
-- name: Facebook
-  type: select
-  proxies: *id001
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Facebook.png
-- name: 国外社交
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
-- name: 国内社交
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/WeChat.png
-- name: Apple服务
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
-- name: 微软服务
-  type: select
-  proxies:
-  - DIRECT
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
 - name: 游戏
   type: select
   proxies:
@@ -247,6 +181,33 @@ proxy-groups:
   - 美国节点
   - 香港节点
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
+- name: 国外社交
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+- name: 国内社交
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/WeChat.png
+- name: 微软服务
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
 - name: 漏网之鱼
   type: select
   proxies:
@@ -260,7 +221,52 @@ proxy-groups:
   - 自动选择
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
-- name: ApplePush
+- name: 国内媒体
+  type: select
+  proxies:
+  - DIRECT
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
+- name: 国外媒体
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+- name: Google
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google.png
+- name: Disney
+  type: select
+  proxies:
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Disney.png
+- name: Twitter
+  type: select
+  proxies: &id001
+  - 节点选择
+  - 自动选择
+  - 美国节点
+  - 香港节点
+  - 手动切换
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Twitter.png
+- name: Apple服务
   type: select
   proxies:
   - DIRECT
@@ -287,15 +293,6 @@ proxy-groups:
   - 香港节点
   - 手动切换
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
-- name: Disney
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Disney.png
 - name: NetEase
   type: select
   proxies:
@@ -305,7 +302,19 @@ proxy-groups:
   - 美国节点
   - 香港节点
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
-- name: 国内媒体
+- name: Telegram
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+- name: Facebook
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Facebook.png
+- name: Instagram
+  type: select
+  proxies: *id001
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png
+- name: ApplePush
   type: select
   proxies:
   - DIRECT
@@ -313,16 +322,7 @@ proxy-groups:
   - 自动选择
   - 美国节点
   - 香港节点
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
-- name: 国外媒体
-  type: select
-  proxies:
-  - 节点选择
-  - 自动选择
-  - 美国节点
-  - 香港节点
-  - 手动切换
-  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
+  icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
 rule-providers:
   Reject:
     type: http
