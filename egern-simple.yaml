@@ -202,10 +202,3 @@ rules:
     policy: 国内
 - default:
     policy: 国外
-scriptings:
-- generic:
-    name: 网络状态
-    script_url: https://raw.githubusercontent.com/mickeu/Egern/refs/heads/main/%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83.js
-    timeout: 20
-widgets:
-- name: 网络状态
