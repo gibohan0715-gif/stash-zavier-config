@@ -49,6 +49,42 @@ dns:
     wechat.com:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
+    douyin.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    douyinpic.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    douyinstatic.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    douyincdn.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    douyinvod.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    snssdk.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    bytedance.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    iesdouyin.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    amemv.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    toutiao.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    ixigua.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    pstatp.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 proxy-providers:
   Subscribe:
     type: http
@@ -321,6 +357,12 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
     path: ./ruleset/Copilot.yaml
     interval: 86400
+  DouYin:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.yaml
+    path: ./ruleset/DouYin.yaml
+    interval: 86400
 rules:
 - DOMAIN-SUFFIX,emby.alexzavier.ccwu.cc,DIRECT
 - RULE-SET,Reject,REJECT
@@ -341,6 +383,7 @@ rules:
 - RULE-SET,Netflix,流媒体
 - RULE-SET,Disney,流媒体
 - RULE-SET,Spotify,音乐
+- RULE-SET,DouYin,DIRECT
 - RULE-SET,ChinaMax,DIRECT
 - RULE-SET,ChinaDomain,DIRECT
 - RULE-SET,ChinaIp,DIRECT,no-resolve
