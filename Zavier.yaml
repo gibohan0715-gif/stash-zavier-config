@@ -142,6 +142,40 @@ policy_groups:
     - 新加坡节点
     - 台湾节点
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+# 三个 Emby 服各一个策略组 (2026-11-23 他让单独建, 默认直连, 可单独切国家节点)
+- select:
+    name: 予初服
+    policies:
+    - DIRECT
+    - 美国节点
+    - 香港节点
+    - 日本节点
+    - 韩国节点
+    - 新加坡节点
+    - 台湾节点
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+- select:
+    name: 海豚服
+    policies:
+    - DIRECT
+    - 美国节点
+    - 香港节点
+    - 日本节点
+    - 韩国节点
+    - 新加坡节点
+    - 台湾节点
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+- select:
+    name: 9527服
+    policies:
+    - DIRECT
+    - 美国节点
+    - 香港节点
+    - 日本节点
+    - 韩国节点
+    - 新加坡节点
+    - 台湾节点
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
 - auto_test:
     name: 美国节点
     policies:
@@ -211,13 +245,13 @@ rules:
     policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Yuchu.yaml
-    policy: 国内
+    policy: 予初服
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Haitun.yaml
-    policy: 国内
+    policy: 海豚服
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/9527.yaml
-    policy: 国内
+    policy: 9527服
 # Rex 播放器 API (exact domain, mirrors the rule in his Egern UI)
 - domain:
     match: api.rexnow.tv
