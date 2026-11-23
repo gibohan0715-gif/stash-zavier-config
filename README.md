@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/stash
 
 ### Egern 简化版（只有国外/国内两个策略 + ApplePush 单独）
 
-https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/egern-simple.yaml
+https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/Zavier.yaml
 
 ## 说明
 
