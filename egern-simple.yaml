@@ -117,6 +117,18 @@ dns:
       value: 国内DNS
       disabled: false
   - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Yuchu.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Haitun.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/9527.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChineseTLD.yaml
       value: 国内DNS
       disabled: false
@@ -271,6 +283,15 @@ rules:
     policy: REJECT
 - domain_suffix:
     match: emby.alexzavier.ccwu.cc
+    policy: 国内
+- rule_set:
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Yuchu.yaml
+    policy: 国内
+- rule_set:
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Haitun.yaml
+    policy: 国内
+- rule_set:
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/9527.yaml
     policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
