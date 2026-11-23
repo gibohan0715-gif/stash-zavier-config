@@ -4,22 +4,31 @@
 domain_suffix_set:
   - android.com
   - androidtv.com
+  - blog.google
   - blogspot.com
   - chrome.com
   - chromium.org
+  - crashlytics.com
+  - deepmind.com
   - doubleclick.net
   - firebase-settings.crashlytics.com
   - firebase.com
   - firebase.io
   - firebaseapp.com
+  - fitbit.com
+  - g.co
   - ggpht.com
   - gmail.com
   - google-analytics.com
   - google.cn
+  - google.co.jp
   - google.com
   - google.com.hk
+  - google.com.tw
   - googleadservices.com
   - googleapis.com
+  - googleblog.com
+  - googlemail.com
   - googleplay.com
   - googlesource.com
   - googlesyndication.com
@@ -32,8 +41,15 @@ domain_suffix_set:
   - gvt1.com
   - gvt2-cn.com
   - gvt2.com
+  - kaggle.com
+  - nest.com
   - recaptcha-cn.net
   - recaptcha.net
+  - waymo.com
+  - waze.com
   - withgoogle.com
+  - youtu.be
+  - youtube-nocookie.com
   - youtube.com
+  - yt.be
   - ytimg.com

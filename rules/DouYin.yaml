@@ -31,6 +31,7 @@ domain_suffix_set:
   - bytednsdoc.com
   - byteimg.com
   - byteplus-api-test.com
+  - byteplus.com
   - byteplusapi-test.com
   - bytepluses-test.com
   - bytepluspcs-test.com
@@ -57,6 +58,7 @@ domain_suffix_set:
   - feishu-3rd-party-services.com
   - feishu-boe.net
   - feishu-pre.net
+  - feishu.cn
   - feishu.net
   - feishuapp-cdn.net
   - feishuapp.com
@@ -120,6 +122,8 @@ domain_suffix_set:
   - larksuiteimg-pre.com
   - larksuiteimg.com
   - muscdn.com
+  - musical.ly
+  - oceanengine.com
   - open-douyin.com
   - pangolin-dsp-toutiao-b.com
   - pangolin-dsp-toutiao.com
@@ -186,3 +190,4 @@ domain_suffix_set:
   - xiguaapp.com
   - xiguashipin.net
   - xiguavideo.net
+  - xingtu.cn

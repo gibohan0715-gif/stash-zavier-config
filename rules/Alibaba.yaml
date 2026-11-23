@@ -29,30 +29,49 @@ domain_suffix_set:
   - aliimg.com
   - alimama.com
   - alipan.com
+  - alipay.cn
   - alipay.com
+  - alipayobjects.com
   - aliresearch.com
   - aliyun.com
+  - aliyundrive.com
   - amap.com
   - amap.net
   - amapauto.com
+  - antfin.com
+  - antgroup.com
+  - autonavi.com
+  - cainiao.com
+  - damai.cn
   - dingding.xin
   - dingtalk.com
   - dingtalk.net
   - dingtalkapps.com
   - dingtalkcloud.com
+  - ele.me
   - eleme.io
   - elemecdn.com
+  - fliggy.com
   - gaode.com
+  - juhuasuan.com
+  - koubei.com
+  - lazada.com
   - mmstat.com
+  - mybank.cn
+  - taobao.cn
   - taobao.com
   - taobaocdn.com
+  - tbcdn.cn
   - tmall.com
+  - tmall.hk
   - tmalltv.com
   - tudou.com
+  - uc.cn
   - ucweb.com
   - xiami.com
   - xiami.fm
   - xiami.net
   - youku.com
+  - youku.tv
   - youkuhonor.com
   - ztna-dingtalk.com

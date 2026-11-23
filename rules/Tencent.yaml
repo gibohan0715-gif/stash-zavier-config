@@ -5,8 +5,11 @@ domain_suffix_set:
   - apigwtencent.com
   - bktencent.com
   - cncqcloud.com
+  - dnspod.cn
+  - dnspod.com
   - gaapqcloud.com
   - govqcloud.com
+  - gtimg.com
   - idqqimg.com
   - igtm-meeting-tencent.com
   - imqq.com
@@ -35,6 +38,7 @@ domain_suffix_set:
   - qcloudtrip.com
   - qcloudtt.com
   - qcloudwaf.com
+  - qlogo.cn
   - qpic.cn
   - qq.com
   - qqgameapp.com
@@ -97,7 +101,10 @@ domain_suffix_set:
   - tenpay.com
   - tenpayglobal.com
   - udqqimg.com
+  - url.cn
+  - voovmeeting.com
   - wechat.com
+  - wegame.com
   - weixin.com
   - weixin.qq.com
   - weixinbridge.com
