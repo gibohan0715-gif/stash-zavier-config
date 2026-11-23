@@ -1,0 +1,25 @@
+# Egern rule set — vendor DNS forward list
+# Source: derived from MagicRule China/Global sets (2026-11-20 build) + hand-checked roots
+# Used ONLY by dns.forward in egern-simple.yaml (proxy_rule_set match)
+domain_suffix_set:
+  - baidu.com
+  - baidubce.com
+  - baidupcs.com
+  - baidustatic.com
+  - bce-cdn.com
+  - bce-cdn.net
+  - bcebos.com
+  - bcelive.com
+  - bdstatic.com
+  - ecombdstatic.com
+  - hao123.com
+  - hao123img.com
+  - iqiyi.com
+  - iqiyipic.com
+  - nuomi.com
+  - pps.tv
+  - ppsimg.com
+  - qiyi.com
+  - qiyipic.com
+  - tieba.com
+  - tiebaimg.com

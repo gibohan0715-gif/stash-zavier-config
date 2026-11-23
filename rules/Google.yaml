@@ -1,0 +1,39 @@
+# Egern rule set — vendor DNS forward list
+# Source: derived from MagicRule China/Global sets (2026-11-20 build) + hand-checked roots
+# Used ONLY by dns.forward in egern-simple.yaml (proxy_rule_set match)
+domain_suffix_set:
+  - android.com
+  - androidtv.com
+  - blogspot.com
+  - chrome.com
+  - chromium.org
+  - doubleclick.net
+  - firebase-settings.crashlytics.com
+  - firebase.com
+  - firebase.io
+  - firebaseapp.com
+  - ggpht.com
+  - gmail.com
+  - google-analytics.com
+  - google.cn
+  - google.com
+  - google.com.hk
+  - googleadservices.com
+  - googleapis.com
+  - googleplay.com
+  - googlesource.com
+  - googlesyndication.com
+  - googletagmanager.com
+  - googleusercontent.com
+  - googlevideo.com
+  - gstatic-cn.com
+  - gstatic.com
+  - gvt1-cn.com
+  - gvt1.com
+  - gvt2-cn.com
+  - gvt2.com
+  - recaptcha-cn.net
+  - recaptcha.net
+  - withgoogle.com
+  - youtube.com
+  - ytimg.com

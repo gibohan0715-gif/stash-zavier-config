@@ -1,0 +1,15 @@
+# Egern rule set — vendor DNS forward list
+# Source: derived from MagicRule China/Global sets (2026-11-20 build) + hand-checked roots
+# Used ONLY by dns.forward in egern-simple.yaml (proxy_rule_set match)
+domain_suffix_set:
+  - cloudflare-dns.com
+  - cloudflare-ipfs.com
+  - cloudflare.com
+  - cloudflare.net
+  - cloudflareaccess.com
+  - cloudflareclient.com
+  - cloudflareinsights.com
+  - cloudflareobjects.com
+  - cloudflarestorage.com
+  - pages.dev
+  - workers.dev
