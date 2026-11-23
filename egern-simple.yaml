@@ -75,10 +75,6 @@ policy_groups:
     type: select
     urls:
     - http://your-service-provider
-    - http://your-service-provider
-    - http://your-service-provider
-    - http://your-service-provider
-    - http://your-service-provider
     hidden: false
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Static.png
 - select:
