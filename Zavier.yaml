@@ -147,6 +147,7 @@ policy_groups:
     name: 予初服
     policies:
     - DIRECT
+    - 订阅
     - 美国节点
     - 香港节点
     - 日本节点
@@ -158,6 +159,7 @@ policy_groups:
     name: 海豚服
     policies:
     - DIRECT
+    - 订阅
     - 美国节点
     - 香港节点
     - 日本节点
@@ -169,6 +171,7 @@ policy_groups:
     name: 9527服
     policies:
     - DIRECT
+    - 订阅
     - 美国节点
     - 香港节点
     - 日本节点
