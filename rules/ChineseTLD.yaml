@@ -1,7 +1,0 @@
-# Egern rule set — Chinese IDN TLDs (hand list)
-# Chinese top-level domains in punycode: .中国 / .公司 / .网络
-# Used ONLY by dns.forward in egern-simple.yaml (proxy_rule_set match)
-domain_suffix_set:
-  - xn--55qx5d
-  - xn--fiqs8s
-  - xn--io0a7i
