@@ -1,0 +1,29 @@
+# Egern rule set — Chinese AI services' .cn domains (hand list)
+# Source: the .cn entries in MagicRule's GlobalAI set (2026-11-20 build);
+# these are Chinese AI services whose .cn domains are NOT in any domestic set,
+# so without this list they would match GlobalAI first and resolve via foreign DNS.
+# 13 of 20 resolve at the apex; the other 7 are backend suffixes (zones exist,
+# services live on subdomains, e.g. api.marscode.com.cn resolves).
+# Used ONLY by dns.forward in egern-simple.yaml (proxy_rule_set match),
+# placed before GlobalAI so it wins.
+domain_suffix_set:
+  - anthropic.com.cn
+  - bigmodel.cn
+  - chatglm.cn
+  - coze.cn
+  - cozebaas.cn
+  - cozefn.cn
+  - cozeide.cn
+  - marscode.cn
+  - marscode.com.cn
+  - mcprev.cn
+  - modelscope.cn
+  - moonshot.cn
+  - ppio.cn
+  - qoder.cn
+  - qoder.com.cn
+  - siliconflow.cn
+  - trae.cn
+  - trae.com.cn
+  - yoma.cn
+  - zhipuai.cn
