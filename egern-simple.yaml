@@ -211,25 +211,25 @@ rules:
     policy: REJECT
 - domain_suffix:
     match: emby.alexzavier.ccwu.cc
-    policy: DIRECT
+    policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
     policy: ApplePush
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
-    policy: DIRECT
+    policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Microsoft.yaml
-    policy: DIRECT
+    policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/NetEase.yaml
-    policy: DIRECT
+    policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/NetEaseMusic.yaml
-    policy: DIRECT
+    policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/NeteaseCloud.yaml
-    policy: DIRECT
+    policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/China.yaml
     policy: 国内
