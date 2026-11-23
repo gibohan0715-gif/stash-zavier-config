@@ -154,8 +154,8 @@ policy_groups:
 - select:
     name: ApplePush
     policies:
-    - DIRECT
     - 国外
+    - DIRECT
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
 rules:
 - rule_set:
@@ -170,6 +170,9 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
     policy: ApplePush
+- rule_set:
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
+    policy: DIRECT
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/China.yaml
     policy: 国内
