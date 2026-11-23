@@ -56,10 +56,6 @@ dns:
       value: REJECT
       disabled: false
   - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
-      value: 国外DNS
-      disabled: false
-  - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Tencent.yaml
       value: 腾讯
       disabled: false
@@ -144,6 +140,14 @@ dns:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaAI.yaml
       value: 国内DNS
       disabled: false
+  - domain_suffix:
+      match: cn
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
+      value: 国外DNS
+      disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/GlobalAI.yaml
       value: 国外DNS
@@ -159,10 +163,6 @@ dns:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Global.yaml
       value: 国外DNS
-      disabled: false
-  - domain_suffix:
-      match: cn
-      value: 国内DNS
       disabled: false
   - domain_wildcard:
       match: '*'
