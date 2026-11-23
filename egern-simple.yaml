@@ -56,6 +56,10 @@ dns:
       value: REJECT
       disabled: false
   - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
+      value: 国外DNS
+      disabled: false
+  - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Tencent.yaml
       value: 腾讯
       disabled: false
@@ -102,10 +106,6 @@ dns:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaIPTV.yaml
       value: 国内DNS
-      disabled: false
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
-      value: 国外DNS
       disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
