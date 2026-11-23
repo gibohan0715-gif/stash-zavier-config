@@ -1,7 +1,7 @@
 # Egern 简化版 by Muse for Zavier — 只有国外/国内两个策略 + ApplePush 单独
 # 规则集: 国内用 MagicRule 大集合 (China/ChinaIPs/ChinaMedia/ChinaGame/ChinaIPTV),
 # 国外用大集合 (GlobalAI/SocialMediaGlobal/GlobalMedia/Global), 不再按单个软件分流
-# DNS 分流: 各大厂域名走自家 DNS (腾讯/阿里/百度/网易/抖音/谷歌/Cloudflare), 其余国内 -> 阿里/腾讯 DoH, 国外 -> Google/Cloudflare DoH
+# DNS 分流: 国内大厂域名走自家 DNS (腾讯/阿里/百度/网易/抖音), 其余国内 -> 阿里/腾讯 DoH, 其余全部走兜底 -> Google/Cloudflare DoH
 # Egern >= v2.20.0 | 导入: Egern > 配置 > 从 URL 下载本文件, 然后把 国外 里的 5 个占位订阅链接换成自己的订阅链接
 http_port: 6152
 socks_port: 6153
@@ -31,21 +31,12 @@ dns:
     抖音:
     - 180.184.1.1
     - 180.184.2.2
-    谷歌:
-    - https://dns.google/dns-query
-    - https://8.8.8.8/dns-query
-    Cloudflare:
-    - https://cloudflare-dns.com/dns-query
-    - https://1.1.1.1/dns-query
     国内DNS:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     国外DNS:
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
-    国内加密IP:
-    - https://223.5.5.5/dns-query
-    - https://1.12.12.12/dns-query
   forward:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/AdvertisingLite.yaml
@@ -80,14 +71,6 @@ dns:
       value: 抖音
       disabled: false
   - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Google.yaml
-      value: 谷歌
-      disabled: false
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Cloudflare.yaml
-      value: Cloudflare
-      disabled: false
-  - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/China.yaml
       value: 国内DNS
       disabled: false
@@ -104,16 +87,8 @@ dns:
       value: 国内DNS
       disabled: false
   - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
-      value: 国外DNS
-      disabled: false
-  - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
       value: 国内DNS
-      disabled: false
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Github.yaml
-      value: 国外DNS
       disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Microsoft.yaml
@@ -148,22 +123,6 @@ dns:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaAI.yaml
       value: 国内DNS
       disabled: false
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/GlobalAI.yaml
-      value: 国外DNS
-      disabled: false
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/SocialMediaGlobal.yaml
-      value: 国外DNS
-      disabled: false
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/GlobalMedia.yaml
-      value: 国外DNS
-      disabled: false
-  - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Global.yaml
-      value: 国外DNS
-      disabled: false
   - domain_suffix:
       match: cn
       value: 国内DNS
@@ -184,7 +143,8 @@ dns:
     dot.pub:
     - 1.12.12.12, 120.53.53.53
   proxy_nameservers:
-  - 国内加密IP
+  - https://223.5.5.5/dns-query
+  - https://1.12.12.12/dns-query
 real_ip_domains:
 - lancache.steamcontent.com
 - '*.msftconnecttest.com'
