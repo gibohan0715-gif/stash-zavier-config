@@ -43,6 +43,9 @@ dns:
     国外DNS:
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
+    国内加密IP:
+    - https://223.5.5.5/dns-query
+    - https://1.12.12.12/dns-query
   forward:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/AdvertisingLite.yaml
@@ -177,8 +180,7 @@ dns:
     dot.pub:
     - 1.12.12.12, 120.53.53.53
   proxy_nameservers:
-  - 119.29.29.29
-  - 223.5.5.5
+  - 国内加密IP
 real_ip_domains:
 - lancache.steamcontent.com
 - '*.msftconnecttest.com'
