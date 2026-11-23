@@ -1,0 +1,4 @@
+# Egern rule set — 9527服 Emby server (hand list)
+# Used by both traffic rules and dns.forward in egern-simple.yaml (policy: 国内 / 国内DNS).
+domain_suffix_set:
+  - emby.9ll.kdns.fr

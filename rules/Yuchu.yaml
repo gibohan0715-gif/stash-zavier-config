@@ -1,0 +1,9 @@
+# Egern rule set — 予初服 Emby server (hand list)
+# Main + backup servers from the user's Emby app resource library.
+# Used by both traffic rules and dns.forward in egern-simple.yaml (policy: 国内 / 国内DNS).
+domain_suffix_set:
+  - 13.yusen.cyou
+  - aaa.yusen6.ccwu.cc
+  - emby.yusen.cc.cd
+  - emby.yusen.us.ci
+  - embya.yusen.cyou
