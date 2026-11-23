@@ -1,0 +1,39 @@
+# Github — GitHub 全量域名（手写汇总）
+# 来源：MagicRule Microsoft 集里的 github 相关条目（domain_set 精确域名 +
+#   domain_suffix_set 后缀），去掉了 3 个遥测域名（copilot-telemetry*.
+#   githubusercontent.com 和 collector.github.com 仍由 AdvertisingLite/
+#   Privacy 拦截）+ GlobalAI 的 api.github.com + GlobalMedia 的
+#   api.githubcopilot.com。ghcr.io（容器仓库）也在 Microsoft 集里。
+# 策略：国外（走代理）。GitHub 是微软旗下服务，所以源规则集把它归在微软集里。
+domain_suffix_set:
+  - api.github.com
+  - api.githubcopilot.com
+  - cafe.github.com
+  - copilot-proxy.githubusercontent.com
+  - copilot-workspace.githubnext.com
+  - ghcr.io
+  - github-api.arkoselabs.com
+  - github-cloud.s3.amazonaws.com
+  - github-production-release-asset-2e65be.s3.amazonaws.com
+  - github-production-repository-file-5c1aeb.s3.amazonaws.com
+  - github-production-repository-image-32fea6.s3.amazonaws.com
+  - github-production-upload-manifest-file-7fdce7.s3.amazonaws.com
+  - github-production-user-asset-6210df.s3.amazonaws.com
+  - github.ai
+  - github.blog
+  - github.career
+  - github.com
+  - github.community
+  - github.dev
+  - github.io
+  - githubapp.com
+  - githubassets.com
+  - githubcopilot.com
+  - githubhackathon.com
+  - githubnext.com
+  - githubpreview.dev
+  - githubstatus.com
+  - githubsupport.com
+  - githubuniverse.com
+  - githubusercontent.com
+  - thegithubshop.com
