@@ -225,6 +225,13 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
     policy: 国内
+# GitHub 下载直连 (raw/release-assets/codeload)，github.com 网页仍走代理
+- domain_suffix:
+    match: githubusercontent.com
+    policy: 国内
+- domain_suffix:
+    match: codeload.github.com
+    policy: 国内
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Github.yaml
     policy: 国外
