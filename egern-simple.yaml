@@ -56,10 +56,6 @@ dns:
       value: REJECT
       disabled: false
   - proxy_rule_set:
-      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
-      value: 国外DNS
-      disabled: false
-  - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Tencent.yaml
       value: 腾讯
       disabled: false
@@ -106,6 +102,10 @@ dns:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaIPTV.yaml
       value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
+      value: 国外DNS
       disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
@@ -292,6 +292,9 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Privacy.yaml
     policy: REJECT
+- rule_set:
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
+    policy: ApplePush
 - domain_suffix:
     match: emby.alexzavier.ccwu.cc
     policy: 国内
@@ -308,9 +311,6 @@ rules:
 - domain:
     match: api.rexnow.tv
     policy: 国内
-- rule_set:
-    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
-    policy: ApplePush
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
     policy: 国内
