@@ -113,23 +113,11 @@ dns:
       value: 国内DNS
       disabled: false
   - domain_suffix:
-      match: cn
-      value: 国内DNS
-      disabled: false
-  - domain_suffix:
       match: emby.alexzavier.ccwu.cc
       value: 国内DNS
       disabled: false
-  - domain_suffix:
-      match: xn--fiqs8s
-      value: 国内DNS
-      disabled: false
-  - domain_suffix:
-      match: xn--55qx5d
-      value: 国内DNS
-      disabled: false
-  - domain_suffix:
-      match: xn--io0a7i
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChineseTLD.yaml
       value: 国内DNS
       disabled: false
   - proxy_rule_set:
@@ -147,6 +135,10 @@ dns:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Global.yaml
       value: 国外DNS
+      disabled: false
+  - domain_suffix:
+      match: cn
+      value: 国内DNS
       disabled: false
   - domain_wildcard:
       match: '*'
