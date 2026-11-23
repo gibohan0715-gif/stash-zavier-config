@@ -26,11 +26,11 @@ dns:
   forward:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/AdvertisingLite.yaml
-      value: reject
+      value: REJECT
       disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Privacy.yaml
-      value: reject
+      value: REJECT
       disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
