@@ -17,27 +17,76 @@ dns:
   - 223.5.5.5
   - 119.29.29.29
   upstreams:
-    Domestic-DNS:
-    - 223.5.5.5
-    - 119.29.29.29
-    Domestic-Encrypted-DNS:
+    国内DNS:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-    Foreign-Encrypted-DNS:
+    国外DNS:
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
   forward:
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/AdvertisingLite.yaml
-      value: REJECT
+      value: reject
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Privacy.yaml
+      value: reject
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple_APNs.yaml
+      value: 国外DNS
       disabled: false
   - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/China.yaml
-      value: Domestic-Encrypted-DNS
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaMedia.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaGame.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaIPTV.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Microsoft.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/NetEase.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/NetEaseMusic.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/GlobalAI.yaml
+      value: 国外DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/SocialMediaGlobal.yaml
+      value: 国外DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/GlobalMedia.yaml
+      value: 国外DNS
+      disabled: false
+  - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Global.yaml
+      value: 国外DNS
       disabled: false
   - domain_wildcard:
       match: '*'
-      value: Foreign-Encrypted-DNS
+      value: 国外DNS
       disabled: false
   hosts:
     dns.google:
