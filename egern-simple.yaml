@@ -112,6 +112,10 @@ dns:
       value: 国内DNS
       disabled: false
   - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Github.yaml
+      value: 国外DNS
+      disabled: false
+  - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Microsoft.yaml
       value: 国内DNS
       disabled: false
@@ -310,6 +314,9 @@ rules:
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Apple.yaml
     policy: 国内
+- rule_set:
+    match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Github.yaml
+    policy: 国外
 - rule_set:
     match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/Microsoft.yaml
     policy: 国内
