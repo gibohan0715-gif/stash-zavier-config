@@ -121,6 +121,10 @@ dns:
       value: 国内DNS
       disabled: false
   - proxy_rule_set:
+      match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/ChinaAI.yaml
+      value: 国内DNS
+      disabled: false
+  - proxy_rule_set:
       match: https://raw.githubusercontent.com/gibohan0715-gif/stash-zavier-config/main/rules/GlobalAI.yaml
       value: 国外DNS
       disabled: false
