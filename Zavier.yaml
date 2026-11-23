@@ -279,3 +279,12 @@ rules:
     policy: 国内
 - default:
     policy: 国外
+# 模块 (2026-11-23 他让加的两个小组件; 引用原作者链接, 不经过仓库)
+# Hark 订阅流量监控: 订阅链接不要写在这里, 在 Egern 模块设置里自己填 SUB1_URL
+modules:
+- name: 订阅流量监控（Hark 仪表盘版）
+  url: https://raw.githubusercontent.com/zhaohantao1360-hash/Hark/main/sub-traffic-hark-v2.yaml
+  enabled: true
+- name: IP 纯净度
+  url: https://raw.githubusercontent.com/vfelix7/rule_module_script/refs/heads/master/egern/module/IP_Purity_Widget.yaml
+  enabled: true
