@@ -4,7 +4,7 @@
 #      + inline 后缀 (emby.alexzavier.ccwu.cc / rexnow.tv / cn)
 # 注意: 腾讯/阿里/百度/抖音四个厂商列表不在这里, 它们各有自己的转发 (走自家 DNS);
 #      分流规则 (rules) 仍引用各自的原始规则集, 本文件只用于 dns.forward。
-# 生成时间: 2026-11-23, 合并方法见 weekly cron 的 re-derive 步骤。
+# 生成时间: 2026-11-27, 合并方法见 weekly cron 的 re-derive 步骤。
 domain_set:
 - 00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 - 0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
@@ -3943,6 +3943,7 @@ domain_suffix_set:
 - chujingapp.com
 - chunbo.com
 - chunboimg.com
+- chunithm.wahlap.com
 - chunyu.mobi
 - chunyuyisheng.com
 - chushi.cool
@@ -4809,6 +4810,7 @@ domain_suffix_set:
 - ecgapp.com.cn
 - ecgapp.net
 - echargenet.com
+- echooai.com
 - ecitic.com
 - ecitic.net
 - ecjobhome.com
@@ -4945,7 +4947,9 @@ domain_suffix_set:
 - favonis.cloud
 - favonis.com
 - favonis.space
+- faw-vw.com
 - faxingbao.com
+- fazhipro.com
 - fbank.com
 - fcapp.run
 - fcbox.com
@@ -5836,6 +5840,7 @@ domain_suffix_set:
 - icbcstandardbank.com
 - icbcstandardresources.com
 - icbcstandardsecurities.com
+- icc.link
 - iccvlog.com
 - icedropper.com
 - ichangtou.com
@@ -7139,6 +7144,7 @@ domain_suffix_set:
 - maiche.com
 - mail.me.com.akadns.net
 - mail4399.com
+- maimai.wahlap.com
 - maimemo.com
 - maimemostatus.com
 - maindown4399.com
@@ -8521,6 +8527,7 @@ domain_suffix_set:
 - s-msn.com
 - s-reader.com
 - s.mzstatic.com
+- saasfz.com
 - saasops.tech
 - saayaa.com
 - saduck.top
@@ -9186,6 +9193,7 @@ domain_suffix_set:
 - tfzq.com
 - tgbus.com
 - tggfl.com
+- tgk-wcaime.wahlap.com
 - tgovcloud.com
 - tgpro.top
 - tgprocs.net
@@ -9786,6 +9794,7 @@ domain_suffix_set:
 - vxhcm.com
 - vxo7tu.com
 - vzuu.com
+- wahlap.net
 - waifushangcheng.com
 - wali.com
 - wallstcn.com
@@ -10167,7 +10176,6 @@ domain_suffix_set:
 - xiguaapp.com
 - xiguashipin.net
 - xiguavideo.net
-- xihuan
 - xilu.com
 - ximalaya.com
 - xin.xin
