@@ -4,7 +4,7 @@
 #      + inline 后缀 (emby.alexzavier.ccwu.cc / rexnow.tv / cn)
 # 注意: 腾讯/阿里/百度/抖音四个厂商列表不在这里, 它们各有自己的转发 (走自家 DNS);
 #      分流规则 (rules) 仍引用各自的原始规则集, 本文件只用于 dns.forward。
-# 生成时间: 2026-11-27, 合并方法见 weekly cron 的 re-derive 步骤。
+# 生成时间: 2026-11-28, 合并方法见 weekly cron 的 re-derive 步骤。
 domain_set:
 - 00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 - 0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
@@ -170,6 +170,7 @@ domain_set:
 - astro1.rastream.com
 - audio-live.radio.cn
 - audiolive.rbc.cn
+- aurora-customization-usw2.lithium.com
 - az764295.vo.msecnd.net
 - azure.microsoft.com
 - azuremarketplace.microsoft.com
@@ -1764,7 +1765,6 @@ domain_suffix_set:
 - 4008117117.com
 - 4008823823.com
 - 40407.com
-- 40shopping.com
 - 423down.com
 - 4399.cn
 - 4399.com
@@ -1983,7 +1983,6 @@ domain_suffix_set:
 - aamgame.mobi
 - aamgame.net
 - aamsmart.com
-- aanaan.com
 - aapl.tw
 - aaplimg.com
 - aardio.com
@@ -2041,7 +2040,6 @@ domain_suffix_set:
 - adukwai.com
 - advertising.apple.com
 - adxvip.com
-- aeasyshop.com
 - afdian.com
 - afdian.net
 - afdiancdn.com
@@ -2090,7 +2088,6 @@ domain_suffix_set:
 - airchinagroup.com
 - airchinalimited.com
 - airguilin.com
-- airmay.com
 - airnut.com
 - airport.brussels
 - airport.com
@@ -2111,7 +2108,6 @@ domain_suffix_set:
 - aizgtc.com
 - aizhan.com
 - ajkimg.com
-- ajtalk.com
 - ajzq.com
 - aka.ms
 - aka815.net
@@ -2219,7 +2215,6 @@ domain_suffix_set:
 - ankarazirvesi2018.com
 - anlaiye.com
 - anmo.com
-- annstores.net
 - anquan
 - anquan.org
 - anquanke.com
@@ -2243,7 +2238,6 @@ domain_suffix_set:
 - anywlan.com
 - aocde.com
 - aod.itunes.apple.com
-- aokwholesale.net
 - aoshu.com
 - aotrip.net
 - aoyou.com
@@ -2820,7 +2814,6 @@ domain_suffix_set:
 - babytreeimg.com
 - badou.com
 - bag-cdn.itunes-apple.com.akadns.net
-- bag-glasses1.com
 - baicaf.com
 - baichuan-ai.com
 - baicizhan.com
@@ -2847,7 +2840,6 @@ domain_suffix_set:
 - baltamatica.com
 - baltamatica.net
 - bamenzhushou.com
-- bandgirlz.com
 - bangcle.com
 - bangongziyuan.com
 - bank-of-china.com
@@ -2866,12 +2858,10 @@ domain_suffix_set:
 - baseopendev.com
 - batchat.com
 - battlecare.net
-- baxsound.com
 - baydn.com
 - bayescom.com
 - bazai.com
 - bbbcdns.com
-- bbestmall.com
 - bbing.com
 - bblmw.com
 - bce-cdn.com
@@ -3187,7 +3177,6 @@ domain_suffix_set:
 - beatswirelesscuffie.com
 - beckyroom.com
 - beddit.tv
-- begin-trade.com
 - beie.org
 - beihaidc.com
 - beijing-lipin.com
@@ -3242,7 +3231,6 @@ domain_suffix_set:
 - bigmodel.cn
 - bihu.com
 - biing.com
-- biitii.com
 - biji.com
 - bili22.cn
 - bili2233.cn
@@ -3339,7 +3327,6 @@ domain_suffix_set:
 - blmpb.com
 - blobstore.apple.com
 - blogjava.net
-- bloommicroventures.com
 - blueaggrestore.com
 - bluecloudprod.com
 - bluehatil.com
@@ -3367,12 +3354,10 @@ domain_suffix_set:
 - bokecc.com
 - boohee.com
 - book118.com
-- bookonsky.net
 - boosj.com
 - bootcdn.net
 - bootcss.com
 - bosera.com
-- bossae.com
 - bosszhipin.com
 - boswp.com
 - botframework.com
@@ -3386,10 +3371,6 @@ domain_suffix_set:
 - bplslb.com
 - bpltm.com
 - braeburncapital.com
-- brandeasygo.com
-- brandelectronic.com
-- brandproducts1688.com
-- brands098.com
 - brawlstars.cn
 - brazilpartneruniversity.com
 - breakdown.me
@@ -3413,9 +3394,7 @@ domain_suffix_set:
 - burningvocabulary.com
 - burstly.net
 - burstlyrewards.com
-- businesswebwise.com
 - busyming.com
-- buy-from-shanghai.com
 - buyaapl.com
 - buyaapl.net
 - buyaple.com
@@ -3430,8 +3409,6 @@ domain_suffix_set:
 - buyjingxi.com
 - buyminibeatbox.com
 - buyonlineheadphones.com
-- buyshoponly.com
-- buzzardflapper.com
 - bvfcdn.com
 - bvfcdn2.com
 - bvfcdn3.com
@@ -3836,8 +3813,6 @@ domain_suffix_set:
 - cheapestbeatsdrdre.com
 - cheapheadphonesland.com
 - cheapheadphonessale.com
-- cheapheadsetmall.com
-- cheapheadsetshop.com
 - cheapmonsterbeatsbydrdre.com
 - cheapmonsterbeatsheadsets.com
 - cheapmonsterbeatssale.com
@@ -3845,11 +3820,8 @@ domain_suffix_set:
 - cheapmonstersbeatsonsale.com
 - cheapnewbeatsbydre.com
 - cheapsalemonster.com
-- cheapshoesvip.com
-- cheapwireless04.com
 - cheapwirelessbeats.com
 - checkzeit.com
-- cheerwholesale.us
 - cheetahfun.com
 - chememall.com
 - cheng.xin
@@ -3858,7 +3830,6 @@ domain_suffix_set:
 - chesicc.net
 - chessease.net
 - cheyisou.com
-- chihair-straightener.com
 - china-chair.com
 - china-nengyuan.com
 - china-sss.com
@@ -3872,7 +3843,6 @@ domain_suffix_set:
 - chinacache.com
 - chinacache.net
 - chinachugui.com
-- chinaclothesstore.com
 - chinacloud-mobile.cn
 - chinacloudapi.cn
 - chinacloudapp.cn
@@ -3948,7 +3918,6 @@ domain_suffix_set:
 - chunyuyisheng.com
 - chushi.cool
 - chushou.tv
-- ciattackers.com
 - cibn.cc
 - cibntv.net
 - cicc.com
@@ -4105,7 +4074,6 @@ domain_suffix_set:
 - cmf.ltd
 - cmfchina.com
 - cmfu.com
-- cmhalq.com
 - cmicapm.com
 - cmpassport.com
 - cmpay.com
@@ -4143,7 +4111,6 @@ domain_suffix_set:
 - cnppa.org
 - cnpsec.com
 - cnsciedu.com
-- cnshopin.com
 - cnsimg.net
 - cnstock.com
 - cnsuning.com
@@ -4233,7 +4200,6 @@ domain_suffix_set:
 - cqcb.com
 - cqcbank.com
 - cqccn.com
-- cqcorea.com
 - cqdcg.com
 - cqliving.com
 - cqnews.net
@@ -4307,7 +4273,6 @@ domain_suffix_set:
 - ctyunwaf1.com
 - ctzcdn.com
 - cubead.com
-- cuffiesaldi.com
 - cups.org
 - custom-iphonecase.com
 - custombeatsbydrebuy.com
@@ -4349,7 +4314,6 @@ domain_suffix_set:
 - dancf.com
 - dandan818.com
 - dandanvoice.com
-- danemarket.com
 - dangbei.com
 - dangbei.net
 - dangdang.com
@@ -4437,7 +4401,6 @@ domain_suffix_set:
 - desktopmovie.org
 - desktopmovies.net
 - desktopmovies.org
-- detaliczny.com
 - develenv.com
 - developer-advisor.com
 - developer.apple.com
@@ -4699,7 +4662,6 @@ domain_suffix_set:
 - druid.vip
 - drvceo.com
 - dt.dbankcloud.ru
-- dtsell.com
 - dtstatic.com
 - du8.ltd
 - duanqu.com
@@ -4776,7 +4738,6 @@ domain_suffix_set:
 - e-msedge.net
 - e8h2ty.tdum.alibaba.com
 - eagsen.com
-- earphonescheapest.com
 - earpod.net
 - easebar.com
 - easebar.net
@@ -4805,7 +4766,6 @@ domain_suffix_set:
 - ebscn-am.com
 - ebscn.com
 - ebtrust.com
-- ebuyheadphones.com
 - eceshi.com
 - ecgapp.com.cn
 - ecgapp.net
@@ -4886,7 +4846,6 @@ domain_suffix_set:
 - et001.com
 - et0731.com
 - etao.com
-- etheadphones.com
 - ets100.com
 - eudic.net
 - eufycn.com
@@ -4922,7 +4881,6 @@ domain_suffix_set:
 - fadfunds.com
 - falconsending.com
 - faloo.com
-- famosascalvas.com
 - famulei.com
 - fanfou.com
 - fang.com
@@ -5070,13 +5028,10 @@ domain_suffix_set:
 - francecasquebeatssolde.com
 - frcasquesbeats.com
 - frdic.com
-- free-aa.com
-- free-sns.com
 - freebuf.com
 - fresh-ideas.cc
 - freshhema.com
 - freshippo.com
-- frishoes.com
 - fromgeek.com
 - frontjs.com
 - frontwize.com
@@ -5309,7 +5264,6 @@ domain_suffix_set:
 - glxcc.net
 - gm86.com
 - gmanhua.com
-- gmnetworks.net
 - gmoj.net
 - gmya.net
 - gmz88.com
@@ -5336,7 +5290,6 @@ domain_suffix_set:
 - gongyi.xin
 - goodq.top
 - goodread.com
-- goodsdunk.net
 - goofish.com
 - goofish.pro
 - googoc.com
@@ -5509,20 +5462,12 @@ domain_suffix_set:
 - hdslb.net
 - hdslb.org
 - hdyxgame.com
-- headphonepubs.com
-- headphones-cool.com
 - headphones-dre.com
 - headphones-outlet-online.com
 - headphonesbeatsaudio.com
 - headphonesbeatsbydre.com
 - headphoneses.com
-- headphoneshome.com
-- headphoneshotsales.com
-- headphonesol.com
 - headphonesretailer.com
-- headphonessupply.com
-- headphonezip.com
-- headset987.com
 - healthjd.com
 - heavenlywind.cc
 - hebiphone.com
@@ -5591,8 +5536,6 @@ domain_suffix_set:
 - hikvision.com
 - hima.auto
 - hiocloud.com
-- hipaa6020.com
-- hipzoom.net
 - hisense-home.com
 - hisense.com
 - hisensehitachi.com
@@ -5631,7 +5574,6 @@ domain_suffix_set:
 - homeinns.com
 - homekoo.com
 - homepod.cn
-- honawalaan.com
 - hongbo100.com
 - hongdefund.com
 - hongen.com
@@ -5651,7 +5593,6 @@ domain_suffix_set:
 - hotmail.org
 - hotmonsterbeats.com
 - hotread.com
-- hottestheadphonesonline.com
 - houdao.com
 - houyicaiji.com
 - houyuantuan.com
@@ -5661,7 +5602,6 @@ domain_suffix_set:
 - hqdoc.com
 - hqpcb.com
 - hr-welink.com
-- hrsaz.com
 - hrsecn.com
 - hsfund.com
 - hsqh.net
@@ -5946,7 +5886,6 @@ domain_suffix_set:
 - igetget.com
 - igetui.com
 - igexin.com
-- igoshopping.net
 - igpsport.com
 - igtm-meeting-tencent.com
 - igtm.pub
@@ -5975,7 +5914,6 @@ domain_suffix_set:
 - ilife.eu
 - ilife.gr
 - ilife.wang
-- illianacomputerrecycling.com
 - iluckysf.net
 - im-cc.com
 - im2maker.com
@@ -6021,7 +5959,6 @@ domain_suffix_set:
 - imweb.io
 - in.applicationinsights.azure.com
 - inanguapi.com
-- incentivetravelgifts.com
 - incopat.com
 - indeedpower.com
 - indiaipad.com
@@ -6223,7 +6160,6 @@ domain_suffix_set:
 - ishumei.com
 - ishuqi.com
 - isigning.com
-- islamiccenterofnewlondon.com
 - ispqcloud.com
 - istoreos.com
 - isu.apple.com.akadns.net
@@ -6652,7 +6588,6 @@ domain_suffix_set:
 - kfcbest.com
 - kfzimg.com
 - kgimg.com
-- kickshatchannel.com
 - kidgrid.tv
 - kidsccshow.com
 - kimi.com
@@ -6687,7 +6622,6 @@ domain_suffix_set:
 - koolearn.com
 - koopass.com
 - koowo.com
-- kopfhorergunstigshop.com
 - koubei.com
 - kouclo.com
 - koudai.com
@@ -6883,7 +6817,6 @@ domain_suffix_set:
 - lecloudapi.com
 - lecoo.com
 - ledu.com
-- leecountytimes.com
 - leelen.com
 - lehuipay.com
 - leigod.com
@@ -6918,7 +6851,6 @@ domain_suffix_set:
 - letvcdn.com
 - letvcloud.com
 - letvimg.com
-- lexuemei.com
 - leyuansu.com
 - lf126.net
 - lf127.net
@@ -7037,7 +6969,6 @@ domain_suffix_set:
 - luckincoffee.com
 - luckincoffeecdn.com
 - luckyair.net
-- luckyissue.com
 - luckysf.net
 - ludashi.com
 - ludosuperstar.cn
@@ -7075,7 +7006,6 @@ domain_suffix_set:
 - lync.com
 - lynkco-test.com
 - lynkco.com
-- lyzsxx.com
 - lz310.com
 - lzpipi.com
 - m1.run
@@ -7153,8 +7083,6 @@ domain_suffix_set:
 - maitix.com
 - maixhub.com
 - makecode.org
-- makeeu.com
-- mallheadphone.com
 - mam.netease.com
 - mamayz.com
 - mamecn.com
@@ -7201,7 +7129,6 @@ domain_suffix_set:
 - mbalib.com
 - mbcloud.com
 - mbeats-tech.com
-- mbheadphone.com
 - mblyun.com
 - mcbaas.work
 - mcbang.com
@@ -7427,7 +7354,6 @@ domain_suffix_set:
 - microsoftusercontent.com
 - microsoftuwp.com
 - micstatic.com
-- micstl.com
 - micun.com
 - midasbuy.com
 - midea.com
@@ -7584,7 +7510,6 @@ domain_suffix_set:
 - monsterdrebeats-usa.com
 - monsterdrebeats-usa.net
 - monsterheadphone.net
-- monsterproduct.net
 - monstersbeatbydres.com
 - monstersdebea.com
 - monstershopcheapbeats.net
@@ -7594,7 +7519,6 @@ domain_suffix_set:
 - moonvy.cool
 - mop.com
 - morefreegame.com
-- moreheadphones.com
 - morganstanleyhuaxin.com
 - morphcharts.com
 - moseeker.com
@@ -7786,7 +7710,6 @@ domain_suffix_set:
 - ndcpp.com
 - ndiip.com
 - nease.net
-- neborder.com
 - negozimonsterbeats.com
 - negoziomonsterbeats.com
 - neihancommunity.com
@@ -7814,11 +7737,9 @@ domain_suffix_set:
 - newasp.net
 - newbandeng.com
 - newbeatsblackfriday.com
-- newbemany.com
 - newcoder.com
 - newdrediscount.com
 - newestbeatsbydre.com
-- newlysprung.net
 - newmonst1erbeatsto1re.com
 - newmonsterbeatsheadphones.com
 - newniu.com
@@ -7827,7 +7748,6 @@ domain_suffix_set:
 - news-edge.apple.com
 - news-events.apple.com
 - news.yxrb.net
-- newschristmasshopping.com
 - newssc.org
 - newstjk.com
 - newton.com
@@ -7840,7 +7760,6 @@ domain_suffix_set:
 - nextworkshop.net
 - neyetwatcher.com
 - nffund.com
-- nflhotsalejerseys.com
 - nfoservers.com
 - nfpeople.com
 - ngabbs.com
@@ -7848,7 +7767,6 @@ domain_suffix_set:
 - nia-teams.com
 - nic.xin
 - nicaifu.com
-- nicesshop.net
 - nicezhuanye.com
 - nihaoafrica.org
 - nikkigames.cn
@@ -7918,7 +7836,6 @@ domain_suffix_set:
 - oeeee.com
 - oend.net
 - offcn.com
-- offerairjordanlebron.com
 - office.com
 - office.net
 - office365-net.cn
@@ -7938,7 +7855,6 @@ domain_suffix_set:
 - officialheadphone.com
 - offrezdesipods.com
 - ofweek.com
-- ogameblog.com
 - oi-wiki.com
 - oicq88.com
 - okjike.com
@@ -7985,7 +7901,6 @@ domain_suffix_set:
 - onmicrosoft.com
 - onmschina.cn
 - onsalekey.com
-- onsaletrend.com
 - oojsq.com
 - oortgslb.com
 - opdown.com
@@ -8088,7 +8003,6 @@ domain_suffix_set:
 - pascherbeatsmonster.com
 - passport.net
 - passthepopcorn.me
-- paulsimon-music.com
 - paydxm.com
 - pba0.apple.com
 - pbiwebcontent.cn
@@ -8107,9 +8021,7 @@ domain_suffix_set:
 - peiluyou.com
 - pengyoudewu.com
 - peopleapp.com
-- perfectkickz.net
 - perfectlingo.com
-- personeelsland.com
 - petalmail.com
 - petalmaps.com
 - pgdt.gtimg.cn
@@ -8132,8 +8044,6 @@ domain_suffix_set:
 - phpwind.com
 - phpwind.net
 - piaoliang.com
-- picknicekicks.net
-- pickshoesclothes.com
 - piedaochuan.top
 - pigai.org
 - pillbeatsblackfridaysale.com
@@ -8170,7 +8080,6 @@ domain_suffix_set:
 - pmphmooc.com
 - pn1waq.com
 - pniao.com
-- pocketbiketrader.com
 - podcast.xyz
 - podcasts.apple.com
 - poizon-inner.com
@@ -8452,7 +8361,6 @@ domain_suffix_set:
 - rainyun.com
 - rarbg.to
 - raylink.live
-- rbsgr.com
 - rdfybk.com
 - rdnsdb.com
 - reactorms.com.cn
@@ -8465,7 +8373,6 @@ domain_suffix_set:
 - redacted.ch
 - redenmc.com
 - redmagic.com
-- reform-apple.com
 - renlifang.com
 - renovacionoffice.com
 - renovacionxboxlive.com
@@ -8473,8 +8380,6 @@ domain_suffix_set:
 - renren.com
 - renrendoc.com
 - repo.new
-- repsneakermall.com
-- repswing.com
 - researchandcare.org
 - researchkit.cn
 - researchkit.com.cn
@@ -8537,15 +8442,12 @@ domain_suffix_set:
 - saicmobility.com
 - salebeatslasteststyle4you.com
 - saleblackfridaydrebeats.com
-- salecheaphandbags.com
 - samasty.com
-- samebags.com
 - samsungcloudcn.com
 - sandai.net
 - sanguosha.com
 - sankie.net
 - sankuai.com
-- sanvaras.com
 - sanweihou.com
 - sanwen.net
 - sanxing.com
@@ -8566,7 +8468,6 @@ domain_suffix_set:
 - sckg.com
 - sclive.net
 - scm121.com
-- scnshop.cc
 - scoregg.com
 - scratch5.com
 - scsentry.cn
@@ -8687,16 +8588,12 @@ domain_suffix_set:
 - shizhuang-inc.net
 - shmetro.com
 - shobserver.com
-- shoers.com
-- shoestop2.com
 - shop-headphones.net
 - shopbeatsdre.com
 - shopbydre.com
 - shopcustomizedbeats.com
 - shopdrebeats.com
 - shopmonsterbeats.com
-- shopping-days.net
-- shoppinguheadphones.com
 - shopss.com
 - shouji
 - shoujihuifu.com
@@ -8788,9 +8685,6 @@ domain_suffix_set:
 - smzdm.com
 - smzdmimg.com
 - snapdrop.net
-- sneaker666.com
-- sneakerpage.net
-- sneakerskick.com
 - snimay.com
 - snodehome.com
 - snowballsecurities.com
@@ -8829,7 +8723,6 @@ domain_suffix_set:
 - sonyentertainmentnetwork.com
 - sootoo.com
 - soso.com
-- soso7778.com
 - sososnap.com
 - sou.com
 - soufun.com
@@ -8849,14 +8742,12 @@ domain_suffix_set:
 - spcdntipbak.com
 - spcloudhw.com
 - spcloudhw.net
-- specialtyheadphones.com
 - speedifyvolcai.com
 - speedifyvolcaiv2.com
 - speedws.info
 - speedws.org
 - speiyou.com
 - spektral.cc
-- spiritclubs.com
 - spo-msedge.net
 - spoprod-a.akamaihd.net
 - springairlines.com
@@ -8923,11 +8814,9 @@ domain_suffix_set:
 - successwithteams.com
 - sui.com
 - suike.cn
-- sulwerphoto.com
 - sumkoo.com
 - sumkoo.net
 - sun0769.com
-- sunglassessale2014.com
 - suning.com
 - suningbank.com
 - suningcloud.com
@@ -8940,13 +8829,11 @@ domain_suffix_set:
 - supercachenode.com
 - supercellcommunity.cn
 - supercellsupport.cn
-- superearsenjoy.com
 - superlib.com
 - superlib.net
 - supermap.com
 - supermapcloud.com
 - supet.com
-- supplybestjerseys.com
 - support-china.apple-support.akadns.net
 - support.apple.com
 - surerp.com
@@ -8999,7 +8886,6 @@ domain_suffix_set:
 - szpgm.com
 - szu.app
 - szu.moe
-- szwinnertechnology.com
 - szzfgjj.com
 - t-msedge.net
 - t.tt
@@ -9020,7 +8906,6 @@ domain_suffix_set:
 - taikangzhijia.com
 - tailwindtraders.com
 - tajiduo.com
-- takegoto.com
 - takungpao.com
 - tal.com
 - talk-cloud.net
@@ -9209,7 +9094,6 @@ domain_suffix_set:
 - thegithubshop.com
 - thelarkcloud.com
 - themisweeps.com
-- theuab.net
 - thinkcloudlab.com
 - thinkdifferent.us
 - thinkerride.com
@@ -9355,7 +9239,6 @@ domain_suffix_set:
 - tracking-location.com
 - tracup.com
 - trademessenger.com
-- tradevip1.com
 - trae.cn
 - trae.com.cn
 - trae.guru
@@ -9384,7 +9267,6 @@ domain_suffix_set:
 - tsparkling.com
 - ttbyte.com
 - ttbyte.net
-- tteshop.com
 - ttgslb.com
 - ttgtm.com
 - ttjisu.com
@@ -9510,7 +9392,6 @@ domain_suffix_set:
 - unispc.com
 - uniswdc.com
 - unlocklimitlesslearning.com
-- unstyle.us
 - uoj.ac
 - uoko.com
 - uonline-sh.com
@@ -9544,7 +9425,6 @@ domain_suffix_set:
 - uyunad.com
 - uzzf.com
 - v-56.com
-- v-has.com
 - v.qq.com
 - v.smtcdns.com
 - v1d.szbdyd.com
@@ -9620,10 +9500,8 @@ domain_suffix_set:
 - vipbeatsbydre.com
 - vipdlt.com
 - vipexam.org
-- vipheadphones.com
 - vipmro.com
 - vipmro.net
-- vipshoes2.com
 - vipstatic.com
 - virtualearth.net
 - visualstudio-staging.com
@@ -9816,7 +9694,6 @@ domain_suffix_set:
 - wanyol.com
 - wanyx.com
 - warmheart.top
-- wasdj.com
 - wasu.tv
 - wbd.ms
 - wbimg.com
@@ -9905,10 +9782,6 @@ domain_suffix_set:
 - whee.com
 - whhhealth.com
 - whlovehome.com
-- wholesale-exporter1.com
-- wholesalediscountpurses.com
-- wholesalefine.com
-- wholesaleonlinemart.com
 - wicresoft.com
 - wifi8.com
 - wildfirechat.net
@@ -9979,7 +9852,6 @@ domain_suffix_set:
 - woozooo.com
 - working-bing-int.com
 - worktile.com
-- worldcoinpay.com
 - wosaimg.com
 - woshipm.com
 - wowgf.com

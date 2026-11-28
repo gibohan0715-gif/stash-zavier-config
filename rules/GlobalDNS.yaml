@@ -1,3 +1,8 @@
+# GlobalDNS — 国外域名大合集 (DNS 转发专用, 合并生成, 不要手改)
+# 来源: MagicRule 国外相关规则集 (GlobalAI/SocialMediaGlobal/GlobalMedia/Global)
+#      + 手写列表 (Github.yaml / Apple_APNs)
+# 分流规则 (rules) 仍引用各自的原始规则集, 本文件只用于 dns.forward。
+# 生成时间: 2026-11-28, 合并方法见 weekly cron 的 re-derive 步骤。
 domain_set:
 - 3dna.nationbuilder.com
 - 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -151,7 +156,6 @@ domain_set:
 - assets.lemonsqueezy.com
 - assets.mailgun.com
 - assets.maxon.net
-- assets.mcp.corespeed.io
 - assets.media-platform.com
 - assets.monei.com
 - assets.monetizationos.com
@@ -331,6 +335,7 @@ domain_set:
 - cdn-node.diskpart.com
 - cdn-public-apis.moonlock.com
 - cdn-public.sociabble.com
+- cdn-resize-prod-com.500px.cloud
 - cdn-seo.airdroid.com
 - cdn-service.jp.sumologic.com
 - cdn-share-sprites.flaticon.com
@@ -560,6 +565,7 @@ domain_set:
 - cdn.privacy.com
 - cdn.promo.capcomusa.com
 - cdn.promotekit.com
+- cdn.protect.clerk.com
 - cdn.quadpay.com
 - cdn.quickemailverification.com
 - cdn.rauno.me
@@ -1524,8 +1530,6 @@ domain_set:
 - r2.1hanime.com
 - r2.dejavu.moe
 - r2.gear4music.com
-- r2cdn.c7d.dev
-- r2cdn.corespeed.io
 - r2cdn.myshopline.com
 - rapid-cdn.yottaa.com
 - rawmarkdown.cloudflareaccess.org
@@ -1608,7 +1612,6 @@ domain_set:
 - s8.maxstream.org
 - sandpack-cdn-staging.blazingly.io
 - sbl.onfastspring.com
-- scdn.clerk.com
 - schema-cf.bc0a.com
 - screenshot.domains
 - screenshots.debian.net
@@ -1636,7 +1639,6 @@ domain_set:
 - seccdn.libravatar.org
 - secure-res.craft.do
 - secure.beer7live.com
-- segapi.clerk.com
 - self.events.data.microsoft.com
 - sentry.ainopara.com
 - seo-wp.airdroid.com
@@ -1651,7 +1653,6 @@ domain_set:
 - share.chessbase.com
 - shell.cdn.office.net
 - shields.rbtlog.dev
-- showcase.abovemarket.com
 - sig.grumpybumpers.com
 - sigma9.scpwikicn.com
 - signal.cdnbye.com
@@ -1673,7 +1674,6 @@ domain_set:
 - sp.nba.com
 - sp.streamlabs.com
 - spcdn.incartupsell.com
-- spotlightimage.biggo.com
 - st-eu.dynamicyield.com
 - st-ok-pts.cdn-vk.ru
 - st-ok.cdn-vk.ru

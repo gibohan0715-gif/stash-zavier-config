@@ -1,8 +1,9 @@
 # NAME: Microsoft
 # AUTHOR: MagicRule
 # REPO: https://magicrule.pages.dev
-# UPDATED: 2026-11-17 20:34:08
+# UPDATED: 2026-11-28 00:15:31
 domain_set:
+  - aurora-customization-usw2.lithium.com
   - az764295.vo.msecnd.net
   - azure.microsoft.com
   - azuremarketplace.microsoft.com
